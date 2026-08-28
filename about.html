@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-i18n-title="about.pageTitle">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F7F3EC">
+<title>عن الشركة | المتحدة للإنشاءات والمقاولات</title>
+<meta name="description" content="المتحدة للإنشاءات والمقاولات — خبرة موثوقة والتزام بالجودة منذ 2020، في أعمال الترميم وGRC والتطوير المعماري.">
+
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="preload" as="image" href="assets/about/hero.jpeg" fetchpriority="high">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Tajawal:wght@200;300;400;500;700;800&family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project.css">
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="i18n.css">
+
+<noscript>
+  <style>
+    [data-anim]{ opacity:1 !important; filter:none !important; transform:none !important; }
+    [data-reveal]{ opacity:1 !important; transform:none !important; filter:none !important; }
+    .mobile-menu, .menu-backdrop{ display:none !important; }
+  </style>
+</noscript>
+</head>
+
+<body class="is-preload is-ready anim-done page-project page-about">
+
+<header class="site-header is-stuck" id="siteHeader">
+  <div class="header-inner">
+
+    <a class="brand" href="index.html" aria-label="المتحدة للإنشاءات والمقاولات — الصفحة الرئيسية" data-i18n-attr="aria-label:a11y.brand" data-anim="logo">
+      <img src="assets/logo.png" alt="شعار المتحدة للإنشاءات والمقاولات" data-i18n-attr="alt:a11y.logo" width="541" height="461" decoding="async">
+    </a>
+
+    <nav class="main-nav" aria-label="التنقل الرئيسي" data-i18n-attr="aria-label:a11y.mainNav">
+      <ul>
+        <li><a class="nav-link" href="index.html#hero" data-anim="nav" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a class="nav-link is-active" href="about.html" data-anim="nav" data-i18n="nav.about">عن الشركة</a></li>
+        <li><a class="nav-link" href="index.html#services" data-anim="nav" data-i18n="nav.services">خدماتنا</a></li>
+        <li><a class="nav-link" href="projects-all.html" data-anim="nav" data-i18n="nav.projects">مشاريعنا</a></li>
+        <li><a class="nav-link" href="index.html#partners" data-anim="nav" data-i18n="nav.clients">عملاؤنا</a></li>
+        <li><a class="nav-link" href="index.html#contact" data-anim="nav" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-wrap" data-anim="nav">
+        <button class="lang-switch" type="button" id="langToggle"
+                aria-label="اختيار اللغة" data-i18n-attr="aria-label:a11y.langSelect" aria-expanded="false" aria-haspopup="true" aria-controls="langMenu">
+          <span class="lang-code" id="langCurrent">AR</span>
+          <svg class="lang-globe" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18M12 3c2.6 2.7 3.9 5.7 3.9 9s-1.3 6.3-3.9 9c-2.6-2.7-3.9-5.7-3.9-9S9.4 5.7 12 3z"/>
+          </svg>
+          <svg class="lang-caret" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+        <div class="lang-menu" id="langMenu" role="menu" aria-labelledby="langToggle" hidden>
+          <button type="button" role="menuitem" data-lang="ar" aria-current="true"><span data-i18n="lang.ar">العربية</span><span class="lm-code">AR</span></button>
+          <button type="button" role="menuitem" data-lang="en" aria-current="false"><span data-i18n="lang.en">English</span><span class="lm-code">EN</span></button>
+        </div>
+      </div>
+
+      <button class="menu-toggle" type="button" id="menuToggle"
+              aria-label="فتح القائمة" data-i18n-attr="aria-label:a11y.menuOpen" aria-expanded="false" aria-controls="mobileMenu" data-anim="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+
+  <button class="drawer-close" type="button" id="drawerClose" aria-label="إغلاق القائمة" data-i18n-attr="aria-label:a11y.menuClose">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+
+  <div class="drawer-brand">
+    <img src="assets/logo.png" alt="شعار المتحدة للإنشاءات والمقاولات" data-i18n-attr="alt:a11y.logo" width="541" height="461" loading="lazy" decoding="async">
+  </div>
+
+  <nav aria-label="قائمة الجوال" data-i18n-attr="aria-label:a11y.mobileNav">
+    <ul>
+      <li><a href="index.html#hero"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 10.6L12 4l8 6.6"/><path d="M6 9.4V20h12V9.4"/><path d="M10 20v-5.4h4V20"/></svg></span><span data-i18n="nav.home">الرئيسية</span></a></li>
+      <li><a class="is-active" href="about.html"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg></span><span data-i18n="nav.whoweare">من نحن</span></a></li>
+      <li><a href="index.html#services"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.4" height="6.4" rx="1.2"/><rect x="13.6" y="4" width="6.4" height="6.4" rx="1.2"/><rect x="4" y="13.6" width="6.4" height="6.4" rx="1.2"/><rect x="13.6" y="13.6" width="6.4" height="6.4" rx="1.2"/></svg></span><span data-i18n="nav.services">خدماتنا</span></a></li>
+      <li><a href="projects-all.html"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V6.4A1.4 1.4 0 015.4 5h6.2A1.4 1.4 0 0113 6.4V20"/><path d="M13 20v-8.6h5.6A1.4 1.4 0 0120 12.8V20"/><path d="M2.6 20h18.8"/><path d="M6.6 9h1.8M9.8 9h1.8M6.6 13h1.8M9.8 13h1.8M15.6 15h1.8"/></svg></span><span data-i18n="nav.projects">مشاريعنا</span></a></li>
+      <li><a href="index.html#partners"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="9.4" cy="8.4" r="3.1"/><path d="M3.4 19c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.6a3 3 0 010 5.7"/><path d="M17.4 13.4c1.9.7 3.2 2.5 3.2 4.6"/></svg></span><span data-i18n="nav.clients">عملاؤنا</span></a></li>
+      <li><a href="index.html#contact"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5.4" width="18" height="13.2" rx="1.8"/><path d="M3.6 6.6L12 13l8.4-6.4"/></svg></span><span data-i18n="nav.contact">تواصل معنا</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="mobile-menu-foot">
+    <ul class="drawer-info">
+      <li>
+        <span class="di-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6.4 3.6h3.1l1.6 4-2 1.3a11.4 11.4 0 006 6l1.3-2 4 1.6v3.1a1.7 1.7 0 01-1.9 1.7C11.4 18.7 5.3 12.6 4.7 5.5a1.7 1.7 0 011.7-1.9z"/></svg></span>
+        <span class="di-text">
+          <a href="tel:+201066581414" class="ltr-num">+201066581414</a>
+          <a href="tel:+201288094950" class="ltr-num">+201288094950</a>
+          <a href="tel:+201004959092" class="ltr-num">+201004959092</a>
+          <a href="tel:+201212919025" class="ltr-num">+201212919025</a>
+        </span>
+      </li>
+      <li>
+        <span class="di-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5.4" width="18" height="13.2" rx="1.8"/><path d="M3.6 6.6L12 13l8.4-6.4"/></svg></span>
+        <span class="di-text"><a href="mailto:unitedconstructioncompany2020@gmail.com" class="di-mail">unitedconstructioncompany2020@gmail.com</a></span>
+      </li>
+      <li>
+        <span class="di-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21.5s7-5.9 7-11a7 7 0 10-14 0c0 5.1 7 11 7 11z"/><circle cx="12" cy="10.3" r="2.7"/></svg></span>
+        <span class="di-text"><a href="https://maps.google.com/?q=21+طريق+اسكندرية+مطروح+العامرية+اسكندرية" target="_blank" rel="noopener" data-i18n="drawer.address">21 طريق اسكندرية مطروح ش مدرسة شيرين قسم العامرية اسكندرية</a></span>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="menu-backdrop" id="menuBackdrop" hidden></div>
+
+
+<main>
+
+  <!-- ============================================================
+       ABOUT HERO
+       ============================================================ -->
+  <section class="ab-hero">
+    <div class="ab-hero-bg" aria-hidden="true"></div>
+    <div class="ab-hero-veil" aria-hidden="true"></div>
+    <span class="ab-hero-orn" aria-hidden="true"></span>
+
+    <div class="ab-hero-inner">
+
+      <div class="proj-top-row ab-top-row">
+        <a class="proj-back" href="index.html#hero">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          <span data-i18n="proj.backToHome">العودة إلى الرئيسية</span>
+        </a>
+
+        <a class="proj-cta ab-cta-top" href="tel:+201066581414">
+          <span data-i18n="ab.requestQuote">طلب عرض سعر</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+        </a>
+      </div>
+
+      <div class="ab-hero-copy">
+        <p class="ab-kicker" data-reveal style="--r:0">
+          <span class="k-rule" aria-hidden="true"></span>
+          <span data-i18n="ab.kicker">عن المتحدة للمقاولات</span>
+        </p>
+
+        <h1 class="ab-title" data-reveal style="--r:1">
+          <span data-i18n="ab.titlePre">نبني المستقبل</span><br><span data-i18n="ab.titleMid">بجودة </span><em data-i18n="ab.titleEm">تدوم</em>
+        </h1>
+
+        <p class="ab-lede" data-reveal style="--r:2" data-i18n="ab.lede">
+          المتحدة للمقاولات شركة مصرية متخصصة في أعمال التشييد والبناء
+          والمقاولات والتشطيبات، نلتزم بتنفيذ مشاريعنا بأعلى معايير الجودة
+          والدقة والالتزام.
+        </p>
+
+        <div class="ab-hero-cta" data-reveal style="--r:3">
+          <a class="btn btn-gold" href="https://wa.me/201066581414" target="_blank" rel="noopener">
+            <span data-i18n="ab.ctaContact">تواصل معنا</span>
+            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          </a>
+        </div>
+
+        <ul class="ab-facts" data-reveal style="--r:4">
+          <li>
+            <span class="af-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21.5s7-5.9 7-11a7 7 0 10-14 0c0 5.1 7 11 7 11z"/><circle cx="12" cy="10.3" r="2.7"/></svg></span>
+            <span class="af-text"><small data-i18n="ab.factLocation">الموقع</small><strong data-i18n="ab.factLocationVal">الإسكندرية - العامرية</strong></span>
+          </li>
+          <li>
+            <span class="af-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3.4" y="4.6" width="17.2" height="16" rx="1.8"/><path d="M3.4 9.4h17.2M7.4 3v3.2M16.6 3v3.2"/></svg></span>
+            <span class="af-text"><small data-i18n="ab.factStart">بداية النشاط</small><strong class="ltr-num">2020</strong></span>
+          </li>
+          <li>
+            <span class="af-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.4" height="6.4" rx="1.2"/><rect x="13.6" y="4" width="6.4" height="6.4" rx="1.2"/><rect x="4" y="13.6" width="6.4" height="6.4" rx="1.2"/><rect x="13.6" y="13.6" width="6.4" height="6.4" rx="1.2"/></svg></span>
+            <span class="af-text"><small data-i18n="ab.factField">مجال العمل</small><strong data-i18n="ab.factFieldVal">تشييد ومقاولات - تشطيبات</strong></span>
+          </li>
+          <li>
+            <span class="af-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg></span>
+            <span class="af-text"><small data-i18n="ab.factType">نوع المنشأة</small><strong data-i18n="ab.factTypeVal">منشأة فردية</strong></span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHO WE ARE — gallery + copy
+       ============================================================ -->
+  <section class="sec sec--ab-who" id="who">
+    <div class="sec-inner">
+
+      <div class="ab-who-grid">
+
+        <div class="ab-who-gallery" data-reveal style="--r:0">
+          <div class="awg-main">
+            <img src="assets/about/work-1.png" alt="فريق العمل أثناء تنفيذ واجهات GRC" loading="lazy" decoding="async">
+          </div>
+          <div class="awg-side">
+            <div class="awg-shot">
+              <img src="assets/about/gallery-3.png" alt="مبنى مكتمل من تنفيذ المتحدة للمقاولات" loading="lazy" decoding="async">
+            </div>
+            <div class="awg-shot">
+              <img src="assets/about/work-4.png" alt="تفاصيل نحت زخرفي دقيق" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+
+        <div class="ab-who-copy">
+          <p class="sec-kicker" data-reveal style="--r:1">
+            <span class="k-rule" aria-hidden="true"></span>
+            <span data-i18n="about.kicker">من نحن</span>
+          </p>
+
+          <h2 class="sec-title" data-reveal style="--r:2">
+            <span data-i18n="ab.whoTitlePre">خبرة موثوقة..</span><br><em data-i18n="ab.whoTitleEm">الالتزام بالجودة</em>
+          </h2>
+
+          <p class="sec-lede" data-reveal style="--r:3" data-i18n="ab.whoLede">
+            تأسست المتحدة للمقاولات عام 2020 بمدينة الإسكندرية، عملنا على
+            تنفيذ العديد من المشاريع الاستثنائية وغير السكنية بكفاءة عالية
+            واهتمام بأدق التفاصيل من مرحلة التصميم حتى تسليم المشروع.
+          </p>
+
+          <a class="btn btn-outline ab-who-cta" href="index.html#contact" data-reveal style="--r:4">
+            <span data-i18n="ab.whoCta">المزيد عن الشركة</span>
+            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHY UNITED — pillars
+       ============================================================ -->
+  <section class="sec sec--ab-why" id="why">
+    <div class="sec-bg" aria-hidden="true"></div>
+    <div class="sec-inner">
+
+      <div class="sec-head">
+        <h2 class="sec-title" data-reveal data-split><span class="line"><span data-i18n="ab.whyTitlePre">لماذا تختار </span><em data-i18n="ab.whyTitleEm">المتحدة؟</em></span></h2>
+      </div>
+
+      <ul class="ab-why-grid">
+
+        <li class="ab-why-card" data-reveal style="--r:0">
+          <span class="awc-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5l13 4.4v9.4c0 7.9-5.3 14.9-13 17.2-7.7-2.3-13-9.3-13-17.2V8.9l13-4.4z"/><path d="M13.8 19.9l4.6 4.6 8.1-8.4"/></svg>
+          </span>
+          <h3 data-i18n="why1.title">جودة عالية</h3>
+          <p data-i18n="why1.desc">مواد عالية الجودة ومطابقة للمواصفات</p>
+        </li>
+
+        <li class="ab-why-card" data-reveal style="--r:1">
+          <span class="awc-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="6.2"/><path d="M20 5v4M20 31v4M35 20h-4M9 20H5M30.5 9.5l-2.8 2.8M12.3 27.7l-2.8 2.8M30.5 30.5l-2.8-2.8M12.3 12.3L9.5 9.5"/></svg>
+          </span>
+          <h3 data-i18n="why2.title">كفاءة واحترافية</h3>
+          <p data-i18n="why2.desc">فريق عمل متخصص ومدرب باستمرار</p>
+        </li>
+
+        <li class="ab-why-card" data-reveal style="--r:2">
+          <span class="awc-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M13.5 20a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/><path d="M8 34c0-4.4 5.4-8 12-8s12 3.6 12 8"/><path d="M24 13.5l3 3 5-5"/></svg>
+          </span>
+          <h3 data-i18n="why3.title">التزام كامل</h3>
+          <p data-i18n="why3.desc">الالتزام بالوقت المحدد وتسليم المشاريع</p>
+        </li>
+
+        <li class="ab-why-card" data-reveal style="--r:3">
+          <span class="awc-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="8" width="28" height="24" rx="2.4"/><path d="M6 16h28M13 8v-2M27 8v-2"/><path d="M13 22h6M13 27h10"/></svg>
+          </span>
+          <h3 data-i18n="why4.title">حلول متكاملة</h3>
+          <p data-i18n="why4.desc">من التصميم إلى التنفيذ والتشطيب النهائي</p>
+        </li>
+
+        <li class="ab-why-card" data-reveal style="--r:4">
+          <span class="awc-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5l4.2 8.6 9.5 1.4-6.9 6.7 1.6 9.4L20 26l-8.4 4.6 1.6-9.4-6.9-6.7 9.5-1.4L20 4.5z"/></svg>
+          </span>
+          <h3 data-i18n="why5.title">خبرة موثوقة</h3>
+          <p data-i18n="why5.desc">خبرة عملية في تنفيذ عدة أنواع من المشاريع</p>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHAT WE OFFER
+       ============================================================ -->
+  <section class="sec sec--ab-offer" id="offer">
+    <div class="sec-inner">
+
+      <div class="sec-head">
+        <h2 class="sec-title" data-reveal data-split><span class="line" data-i18n="ab.offerTitle">مـاذا نقـدم</span></h2>
+      </div>
+
+      <ul class="ab-offer-grid">
+
+        <li class="ab-offer-card" data-reveal style="--r:0">
+          <div class="aoc-media"><img src="assets/about/work-2.png" alt="أعمال التشييد والبناء" loading="lazy" decoding="async"></div>
+          <div class="aoc-foot">
+            <h3 data-i18n="offer1.title">أعمال التشييد والبناء</h3>
+            <p data-i18n="offer1.desc">تنفيذ الأعمال الإنشائية للمباني السكنية وغير السكنية وفق أعلى معايير الجودة.</p>
+          </div>
+        </li>
+
+        <li class="ab-offer-card" data-reveal style="--r:1">
+          <div class="aoc-media"><img src="assets/about/work-3.png" alt="أعمال المقاولات" loading="lazy" decoding="async"></div>
+          <div class="aoc-foot">
+            <h3 data-i18n="offer2.title">أعمال المقاولات</h3>
+            <p data-i18n="offer2.desc">تنفيذ جميع الأعمال المدنية والإنشائية بكفاءة ودقة حسب متطلبات المشروع.</p>
+          </div>
+        </li>
+
+        <li class="ab-offer-card" data-reveal style="--r:2">
+          <div class="aoc-media"><img src="assets/about/gallery-2.png" alt="أعمال GRC والواجهات" loading="lazy" decoding="async"></div>
+          <div class="aoc-foot">
+            <h3><span data-i18n="offer3.titlePre">أعمال </span><span class="ltr">GRC</span><span data-i18n="offer3.titlePost"> والواجهات</span></h3>
+            <p><span data-i18n="offer3.desc1">تصميم وتنفيذ وتركيب عناصر </span><span class="ltr">GRC</span><span data-i18n="offer3.desc2"> للواجهات والزخارف المعمارية.</span></p>
+          </div>
+        </li>
+
+        <li class="ab-offer-card" data-reveal style="--r:3">
+          <div class="aoc-media"><img src="assets/about/gallery-1.png" alt="أعمال التشطيبات" loading="lazy" decoding="async"></div>
+          <div class="aoc-foot">
+            <h3 data-i18n="offer4.title">أعمال التشطيبات</h3>
+            <p data-i18n="offer4.desc">تنفيذ التشطيبات الداخلية والخارجية بأحدث الأساليب وأفضل الخامات.</p>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       OUR METHODOLOGY
+       ============================================================ -->
+  <section class="sec sec--ab-flow" id="flow">
+    <div class="sec-bg" aria-hidden="true"></div>
+    <div class="sec-inner">
+
+      <div class="sec-head">
+        <h2 class="sec-title" data-reveal data-split><span class="line" data-i18n="ab.flowTitle">منهجيــة عملنـا</span></h2>
+      </div>
+
+      <ol class="ab-flow-track" data-reveal style="--r:0">
+        <li class="afl-step">
+          <span class="afl-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 5l14 7.5v15L20 35 6 27.5v-15L20 5z"/><path d="M20 5v30M6 12.5l14 7.5 14-7.5"/></svg></span>
+          <span class="afl-num">01</span>
+          <h3 data-i18n="flow1.title">دراسة المشروع</h3>
+          <p data-i18n="flow1.desc">تحليل المتطلبات ووضع خطة التنفيذ المناسبة.</p>
+        </li>
+        <li class="afl-step">
+          <span class="afl-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M6 34V13l14-8 14 8v21"/><path d="M14 34V21h12v13"/></svg></span>
+          <span class="afl-num">02</span>
+          <h3 data-i18n="flow2.title">التخطيط</h3>
+          <p data-i18n="flow2.desc">تصميم الحلول الهندسية وإعداد الجداول الزمنية.</p>
+        </li>
+        <li class="afl-step">
+          <span class="afl-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M28.6 6.6l4.8 4.8-19 19-6.4 1.6 1.6-6.4 19-19z"/><path d="M25.3 9.9l4.8 4.8"/></svg></span>
+          <span class="afl-num">03</span>
+          <h3 data-i18n="flow3.title">التنفيذ</h3>
+          <p data-i18n="flow3.desc">تنفيذ الأعمال وفق أعلى معايير الجودة والسلامة.</p>
+        </li>
+        <li class="afl-step">
+          <span class="afl-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M8 30V16a5 5 0 015-5h14a5 5 0 015 5v14"/><path d="M8 30h24M14 20h4M22 20h4"/></svg></span>
+          <span class="afl-num">04</span>
+          <h3 data-i18n="flow4.title">التشطيب</h3>
+          <p data-i18n="flow4.desc">تشطيب المشروع بأفضل الخامات والتقنيات.</p>
+        </li>
+        <li class="afl-step">
+          <span class="afl-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14"/><path d="M13.5 20.5l4.4 4.4 8.6-9.4"/></svg></span>
+          <span class="afl-num">05</span>
+          <h3 data-i18n="flow5.title">التسليم</h3>
+          <p data-i18n="flow5.desc">تسليم المشروع في الوقت المحدد وبأفضل جودة.</p>
+        </li>
+      </ol>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       OFFICIAL CREDENTIALS
+       ============================================================ -->
+  <section class="sec sec--ab-cert" id="credentials">
+    <div class="sec-inner">
+
+      <div class="sec-head">
+        <h2 class="sec-title" data-reveal data-split><span class="line"><span data-i18n="ab.certTitlePre">اعتماداتنا </span><em data-i18n="ab.certTitleEm">الرسمية</em></span></h2>
+        <p class="sec-lede" data-reveal style="--r:1" data-i18n="ab.certLede">شركة مسجلة رسميًا ومرخصة لدى الجهات الحكومية المصرية.</p>
+      </div>
+
+      <ul class="ab-cert-grid">
+        <li class="ab-cert-card" data-reveal style="--r:2">
+          <button type="button" class="acc-btn" data-cert-src="assets/about/cert-commercial.jpeg" data-cert-alt="البطاقة الضريبية">
+            <span class="acc-media"><img src="assets/about/cert-commercial.jpeg" alt="البطاقة الضريبية" loading="lazy" decoding="async"></span>
+            <span class="acc-zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/><path d="M10.5 8v5M8 10.5h5"/></svg>
+            </span>
+            <span class="acc-label" data-i18n="cert1.label">البطاقة الضريبية</span>
+          </button>
+        </li>
+        <li class="ab-cert-card" data-reveal style="--r:3">
+          <button type="button" class="acc-btn" data-cert-src="assets/about/cert-tax.jpeg" data-cert-alt="تسجيل ضريبة القيمة المضافة">
+            <span class="acc-media"><img src="assets/about/cert-tax.jpeg" alt="تسجيل ضريبة القيمة المضافة" loading="lazy" decoding="async"></span>
+            <span class="acc-zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/><path d="M10.5 8v5M8 10.5h5"/></svg>
+            </span>
+            <span class="acc-label" data-i18n="cert2.label">تسجيل ضريبة القيمة المضافة</span>
+          </button>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FINAL CTA
+       ============================================================ -->
+  <section class="sec-cta proj-cta-row ab-final-cta" data-reveal style="--r:0">
+    <div class="proj-cta-copy">
+      <p data-i18n="ab.finalCta1">لديك مشروع؟</p>
+      <p class="proj-cta-sub" data-i18n="ab.finalCta2">دعنا نحوله إلى حقيقة.</p>
+    </div>
+    <div class="proj-cta-actions">
+      <a class="proj-cta proj-cta--solid" href="https://wa.me/201066581414" target="_blank" rel="noopener">
+        <span data-i18n="ab.ctaContact">تواصل معنا</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8l9 6 9-6M4 6h16v12H4z"/></svg>
+      </a>
+      <a class="proj-cta proj-cta--ghost" href="tel:+201066581414">
+        <span data-i18n="ab.requestQuote">طلب عرض سعر</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="sec sec--footer" id="siteFooter">
+  <div class="sec-bg" aria-hidden="true"></div>
+  <div class="sec-inner">
+
+    <div class="footer-grid">
+      <div class="fo-brand" data-reveal style="--r:0">
+        <img src="assets/logo.png" alt="شعار المتحدة للإنشاءات والمقاولات" data-i18n-attr="alt:a11y.logo" width="541" height="461" loading="lazy" decoding="async">
+        <p class="fo-blurb" data-i18n="footer.blurb">نحوّل الأفكار إلى مشاريع واقعية بأعلى معايير الجودة والاحترافية لبناء مستقبل أفضل.</p>
+        <span class="fo-brand-rule" aria-hidden="true"></span>
+      </div>
+
+      <nav class="fo-col" data-reveal style="--r:1" aria-label="روابط سريعة">
+        <h3 class="fo-title" data-i18n="footer.quickLinks">روابط سريعة</h3>
+        <ul>
+          <li><a href="index.html#hero" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="about.html" data-i18n="nav.whoweare">من نحن</a></li>
+          <li><a href="index.html#services" data-i18n="nav.services">خدماتنا</a></li>
+          <li><a href="projects-all.html" data-i18n="nav.projects">مشاريعنا</a></li>
+          <li><a href="index.html#partners" data-i18n="nav.clients">عملاؤنا</a></li>
+          <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <nav class="fo-col" data-reveal style="--r:2" aria-label="خدماتنا">
+        <h3 class="fo-title" data-i18n="footer.services">خدماتنا</h3>
+        <ul>
+          <li><a href="index.html#services" data-i18n="footer.svc1">المقاولات العامة</a></li>
+          <li><a href="index.html#services" data-i18n="footer.svc2">التصميم المعماري</a></li>
+          <li><a href="index.html#services" data-i18n="footer.svc3">إدارة المشاريع</a></li>
+          <li><a href="index.html#services" data-i18n="footer.svc4">التشطيبات الداخلية</a></li>
+          <li><a href="index.html#services" data-i18n="footer.svc5">البنية التحتية</a></li>
+        </ul>
+      </nav>
+
+      <nav class="fo-col" data-reveal style="--r:3" aria-label="عن الشركة">
+        <h3 class="fo-title" data-i18n="footer.aboutCol">عن الشركة</h3>
+        <ul>
+          <li><a href="about.html" data-i18n="footer.aboutWho">من نحن</a></li>
+          <li><a href="about.html#who" data-i18n="footer.aboutVision">رؤيتنا</a></li>
+          <li><a href="about.html#why" data-i18n="footer.aboutValues">قيمنا</a></li>
+          <li><a href="about.html#flow" data-i18n="footer.aboutFlow">منهجية عملنا</a></li>
+          <li><a href="about.html#credentials" data-i18n="footer.aboutCert">اعتماداتنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="fo-col fo-col--contact" data-reveal style="--r:4">
+        <h3 class="fo-title" data-i18n="footer.contactCol">تواصل معنا</h3>
+        <ul class="fo-info">
+          <li>
+            <span class="fi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21.5s7-5.9 7-11a7 7 0 10-14 0c0 5.1 7 11 7 11z"/><circle cx="12" cy="10.3" r="2.7"/></svg></span>
+            <a href="https://www.google.com/maps/search/?api=1&query=31.1668088%2C29.8320788" target="_blank" rel="noopener" data-i18n="footer.addressBlock" data-i18n-html>21 طريق اسكندريه مطروح<br>ش مدرسه شيرين<br>قسم العامريه، اسكندريه</a>
+          </li>
+          <li>
+            <span class="fi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6.4 3.6h3.1l1.6 4-2 1.3a11.4 11.4 0 006 6l1.3-2 4 1.6v3.1a1.7 1.7 0 01-1.9 1.7C11.4 18.7 5.3 12.6 4.7 5.5a1.7 1.7 0 011.7-1.9z"/></svg></span>
+            <span class="fi-stack">
+              <a class="ltr-num" href="tel:+201066581414">+20 106 658 1414</a>
+              <a class="ltr-num" href="tel:+201288094950">+20 128 809 4950</a>
+              <a class="ltr-num" href="tel:+201004959092">+20 100 495 9092</a>
+              <a class="ltr-num" href="tel:+201212919025">+20 121 291 9025</a>
+            </span>
+          </li>
+          <li>
+            <span class="fi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5.4" width="18" height="13.2" rx="1.8"/><path d="M3.6 6.6L12 13l8.4-6.4"/></svg></span>
+            <a class="fi-mail" href="mailto:unitedconstructioncompany2020@gmail.com">unitedconstructioncompany2020@gmail.com</a>
+          </li>
+          <li>
+            <span class="fi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.2V12l3.2 2.1"/></svg></span>
+            <span class="fi-stack"><span data-i18n="footer.hours">السبت – الخميس</span><span class="ltr-num" data-i18n="footer.hoursTime">9:00 ص – 6:00 م</span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bar" data-reveal style="--r:5">
+      <span class="fb-rule" aria-hidden="true"></span>
+      <p class="fb-credit">
+        <span class="fb-en" data-i18n="footer.poweredBy">Powered by</span>
+        <a href="https://wa.me/201211179625" target="_blank" rel="noopener" aria-label="تواصل مع كريم علي على واتساب" data-i18n-attr="aria-label:a11y.whatsappKareem">Kareem Aly</a>
+      </p>
+      <span class="fb-rule" aria-hidden="true"></span>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button — company line, bottom-right -->
+<a href="https://wa.me/201066581414" target="_blank" rel="noopener"
+   class="wa-float" aria-label="تواصل معنا على واتساب" data-i18n-attr="aria-label:a11y.whatsapp">
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path fill="#25D366" d="M16.004 3C9.06 3 3.43 8.62 3.43 15.56c0 2.32.62 4.5 1.7 6.38L3 29l7.24-2.1a12.5 12.5 0 005.76 1.42h.01c6.94 0 12.57-5.62 12.57-12.56C28.58 8.62 22.95 3 16.004 3z"/>
+    <path fill="#FFF" d="M22.4 19.02c-.34-.17-2-1-2.3-1.1-.31-.12-.53-.17-.76.17-.22.34-.87 1.1-1.07 1.32-.2.23-.4.25-.73.09-.34-.17-1.43-.53-2.72-1.68-1-.9-1.68-2-1.88-2.34-.2-.34-.02-.52.15-.7.15-.15.34-.4.5-.6.17-.2.22-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.76-1.85-1.05-2.53-.27-.66-.55-.57-.76-.58l-.65-.01c-.22 0-.6.09-.9.43-.31.34-1.18 1.15-1.18 2.82s1.21 3.27 1.38 3.5c.17.22 2.38 3.63 5.76 5.09.8.35 1.44.55 1.93.71.81.26 1.55.22 2.14.13.65-.1 2-.82 2.28-1.6.28-.8.28-1.48.2-1.62-.08-.14-.3-.22-.64-.39z"/>
+  </svg>
+</a>
+
+<!-- ============================================================
+     CREDENTIAL LIGHTBOX
+     ============================================================ -->
+<div class="ab-lightbox" id="certLightbox" hidden>
+  <button type="button" class="abl-close" id="certLightboxClose" aria-label="إغلاق" data-i18n-attr="aria-label:a11y.close">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <figure class="abl-figure">
+    <img id="certLightboxImg" src="" alt="">
+    <figcaption id="certLightboxCaption"></figcaption>
+  </figure>
+</div>
+
+<script src="i18n.js"></script>
+<script src="script.js" defer></script>
+<script src="about.js" defer></script>
+</body>
+</html>

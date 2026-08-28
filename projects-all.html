@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-i18n-title="pa.pageTitle">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F7F3EC">
+<title>جميع المشاريع | المتحدة للإنشاءات والمقاولات</title>
+<meta name="description" content="استعرض جميع مشاريع المتحدة للإنشاءات والمقاولات — أعمال الترميم وGRC والتطوير المعماري بأعلى معايير الجودة.">
+
+<link rel="icon" href="assets/logo.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Tajawal:wght@200;300;400;500;700;800&family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project.css">
+<link rel="stylesheet" href="projects-all.css">
+<link rel="stylesheet" href="i18n.css">
+
+<noscript>
+  <style>
+    [data-anim]{ opacity:1 !important; filter:none !important; transform:none !important; }
+    [data-reveal]{ opacity:1 !important; transform:none !important; filter:none !important; }
+    .mobile-menu, .menu-backdrop{ display:none !important; }
+  </style>
+</noscript>
+</head>
+
+<body class="is-preload is-ready anim-done page-project">
+
+<header class="site-header is-stuck" id="siteHeader">
+  <div class="header-inner">
+
+    <a class="brand" href="index.html" aria-label="المتحدة للإنشاءات والمقاولات — الصفحة الرئيسية" data-i18n-attr="aria-label:a11y.brand" data-anim="logo">
+      <img src="assets/logo.png" alt="شعار المتحدة للإنشاءات والمقاولات" data-i18n-attr="alt:a11y.logo" width="541" height="461" decoding="async">
+    </a>
+
+    <nav class="main-nav" aria-label="التنقل الرئيسي" data-i18n-attr="aria-label:a11y.mainNav">
+      <ul>
+        <li><a class="nav-link" href="index.html#hero" data-anim="nav" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a class="nav-link" href="about.html" data-anim="nav" data-i18n="nav.about">عن الشركة</a></li>
+        <li><a class="nav-link" href="index.html#services" data-anim="nav" data-i18n="nav.services">خدماتنا</a></li>
+        <li><a class="nav-link is-active" href="projects-all.html" data-anim="nav" data-i18n="nav.projects">مشاريعنا</a></li>
+        <li><a class="nav-link" href="index.html#partners" data-anim="nav" data-i18n="nav.clients">عملاؤنا</a></li>
+        <li><a class="nav-link" href="index.html#contact" data-anim="nav" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-wrap" data-anim="nav">
+        <button class="lang-switch" type="button" id="langToggle"
+                aria-label="اختيار اللغة" data-i18n-attr="aria-label:a11y.langSelect" aria-expanded="false" aria-haspopup="true" aria-controls="langMenu">
+          <span class="lang-code" id="langCurrent">AR</span>
+          <svg class="lang-globe" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18M12 3c2.6 2.7 3.9 5.7 3.9 9s-1.3 6.3-3.9 9c-2.6-2.7-3.9-5.7-3.9-9S9.4 5.7 12 3z"/>
+          </svg>
+          <svg class="lang-caret" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+        <div class="lang-menu" id="langMenu" role="menu" aria-labelledby="langToggle" hidden>
+          <button type="button" role="menuitem" data-lang="ar" aria-current="true"><span data-i18n="lang.ar">العربية</span><span class="lm-code">AR</span></button>
+          <button type="button" role="menuitem" data-lang="en" aria-current="false"><span data-i18n="lang.en">English</span><span class="lm-code">EN</span></button>
+        </div>
+      </div>
+
+      <button class="menu-toggle" type="button" id="menuToggle"
+              aria-label="فتح القائمة" data-i18n-attr="aria-label:a11y.menuOpen" aria-expanded="false" aria-controls="mobileMenu" data-anim="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+
+  <button class="drawer-close" type="button" id="drawerClose" aria-label="إغلاق القائمة" data-i18n-attr="aria-label:a11y.menuClose">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+
+  <div class="drawer-brand">
+    <img src="assets/logo.png" alt="شعار المتحدة للإنشاءات والمقاولات" data-i18n-attr="alt:a11y.logo" width="541" height="461" loading="lazy" decoding="async">
+  </div>
+
+  <nav aria-label="قائمة الجوال" data-i18n-attr="aria-label:a11y.mobileNav">
+    <ul>
+      <li><a href="index.html#hero"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 10.6L12 4l8 6.6"/><path d="M6 9.4V20h12V9.4"/><path d="M10 20v-5.4h4V20"/></svg></span><span data-i18n="nav.home">الرئيسية</span></a></li>
+      <li><a href="about.html"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg></span><span data-i18n="nav.whoweare">من نحن</span></a></li>
+      <li><a href="index.html#services"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.4" height="6.4" rx="1.2"/><rect x="13.6" y="4" width="6.4" height="6.4" rx="1.2"/><rect x="4" y="13.6" width="6.4" height="6.4" rx="1.2"/><rect x="13.6" y="13.6" width="6.4" height="6.4" rx="1.2"/></svg></span><span data-i18n="nav.services">خدماتنا</span></a></li>
+      <li><a class="is-active" href="projects-all.html"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V6.4A1.4 1.4 0 015.4 5h6.2A1.4 1.4 0 0113 6.4V20"/><path d="M13 20v-8.6h5.6A1.4 1.4 0 0120 12.8V20"/><path d="M2.6 20h18.8"/><path d="M6.6 9h1.8M9.8 9h1.8M6.6 13h1.8M9.8 13h1.8M15.6 15h1.8"/></svg></span><span data-i18n="nav.projects">مشاريعنا</span></a></li>
+      <li><a href="index.html#partners"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="9.4" cy="8.4" r="3.1"/><path d="M3.4 19c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.6a3 3 0 010 5.7"/><path d="M17.4 13.4c1.9.7 3.2 2.5 3.2 4.6"/></svg></span><span data-i18n="nav.clients">عملاؤنا</span></a></li>
+      <li><a href="index.html#contact"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5.4" width="18" height="13.2" rx="1.8"/><path d="M3.6 6.6L12 13l8.4-6.4"/></svg></span><span data-i18n="nav.contact">تواصل معنا</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="mobile-menu-foot">
+    <ul class="drawer-info">
+      <li>
+        <span class="di-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6.4 3.6h3.1l1.6 4-2 1.3a11.4 11.4 0 006 6l1.3-2 4 1.6v3.1a1.7 1.7 0 01-1.9 1.7C11.4 18.7 5.3 12.6 4.7 5.5a1.7 1.7 0 011.7-1.9z"/></svg></span>
+        <span class="di-text">
+          <a href="tel:+201066581414" class="ltr-num">+201066581414</a>
+          <a href="tel:+201288094950" class="ltr-num">+201288094950</a>
+          <a href="tel:+201004959092" class="ltr-num">+201004959092</a>
+          <a href="tel:+201212919025" class="ltr-num">+201212919025</a>
+        </span>
+      </li>
+      <li>
+        <span class="di-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5.4" width="18" height="13.2" rx="1.8"/><path d="M3.6 6.6L12 13l8.4-6.4"/></svg></span>
+        <span class="di-text"><a href="mailto:unitedconstructioncompany2020@gmail.com" class="di-mail">unitedconstructioncompany2020@gmail.com</a></span>
+      </li>
+      <li>
+        <span class="di-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21.5s7-5.9 7-11a7 7 0 10-14 0c0 5.1 7 11 7 11z"/><circle cx="12" cy="10.3" r="2.7"/></svg></span>
+        <span class="di-text"><a href="https://maps.google.com/?q=21+طريق+اسكندرية+مطروح+العامرية+اسكندرية" target="_blank" rel="noopener" data-i18n="drawer.address">21 طريق اسكندرية مطروح ش مدرسة شيرين قسم العامرية اسكندرية</a></span>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="menu-backdrop" id="menuBackdrop" hidden></div>
+
+
+<main>
+
+  <!-- ============================================================
+       ALL PROJECTS — HERO BAND
+       ============================================================ -->
+  <section class="proj-hero pa-hero">
+    <div class="proj-hero-inner">
+
+      <div class="proj-top-row">
+        <a class="proj-back" href="index.html#projects">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          <span data-i18n="proj.backToHome">العودة إلى الرئيسية</span>
+        </a>
+      </div>
+
+      <div class="pa-hero-copy">
+        <p class="proj-cat" data-reveal style="--r:0" data-i18n="pa.kicker">أعمالنا</p>
+        <h1 class="pa-title" data-reveal style="--r:1"><span data-i18n="pa.titlePre">جميع </span><em data-i18n="pa.titleEm">مشاريعنا</em></h1>
+        <span class="proj-rule" data-reveal style="--r:2" aria-hidden="true"></span>
+        <p class="proj-lede" data-reveal style="--r:3" data-i18n="pa.lede">
+          مجموعة كاملة من مشاريعنا المنفذة في الترميم وGRC والتطوير المعماري،
+          بأعلى معايير الجودة والدقة في كل تفصيلة.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ALL PROJECTS — GRID
+       ============================================================ -->
+  <section class="sec sec--pa-grid" id="allProjects">
+    <div class="sec-bg" aria-hidden="true"></div>
+    <div class="sec-inner">
+
+      <ul class="pa-grid">
+
+        <li class="pa-card" data-reveal style="--r:0">
+          <a href="project.html?id=7">
+            <div class="pa-media"><img src="assets/p7/hero.jpeg" alt="موقع زهرة الأوقاف" loading="lazy" decoding="async" width="640" height="480"></div>
+            <div class="pa-foot">
+              <span class="pa-num">01</span>
+              <div class="pa-text">
+                <span class="pa-cat" data-i18n="pa.catSpecial">أعمال خاصة</span>
+                <h3 class="pa-name" data-i18n="p7.title">موقع زهرة الأوقاف</h3>
+              </div>
+              <svg class="pa-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </div>
+          </a>
+        </li>
+
+        <li class="pa-card" data-reveal style="--r:1">
+          <a href="project.html?id=6">
+            <div class="pa-media"><img src="assets/p6/hero.png" alt="تركيب GRC قصر السلاملك والمبنى الملحق" loading="lazy" decoding="async" width="640" height="480"></div>
+            <div class="pa-foot">
+              <span class="pa-num">02</span>
+              <div class="pa-text">
+                <span class="pa-cat" data-i18n="pa.catGRC">مشاريع GRC</span>
+                <h3 class="pa-name"><span data-i18n="p6.titlePre">تركيب </span><span class="ltr">GRC</span><span data-i18n="p6.titlePost"> قصر السلاملك والمبنى الملحق</span></h3>
+              </div>
+              <svg class="pa-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </div>
+          </a>
+        </li>
+
+        <li class="pa-card" data-reveal style="--r:2">
+          <a href="project.html?id=3">
+            <div class="pa-media"><img src="assets/p3/hero.jpeg" alt="ترميم وتركيب GRC سور المنتزه الأثري" loading="lazy" decoding="async" width="640" height="480"></div>
+            <div class="pa-foot">
+              <span class="pa-num">03</span>
+              <div class="pa-text">
+                <span class="pa-cat" data-i18n="pa.catRestoration">مشاريع الترميم</span>
+                <h3 class="pa-name"><span data-i18n="p3.titlePre">ترميم وتركيب </span><span class="ltr">GRC</span><span data-i18n="p3.titlePost"> سور المنتزه الأثري</span></h3>
+              </div>
+              <svg class="pa-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </div>
+          </a>
+        </li>
+
+        <li class="pa-card" data-reveal style="--r:3">
+          <a href="project.html?id=4">
+            <div class="pa-media"><img src="assets/p4/hero.png" alt="تركيب GRC شاطئ فريدة المنتزه" loading="lazy" decoding="async" width="640" height="480"></div>
+            <div class="pa-foot">
+              <span class="pa-num">04</span>
+              <div class="pa-text">
+                <span class="pa-cat" data-i18n="pa.catGRC">مشاريع GRC</span>
+                <h3 class="pa-name"><span data-i18n="p4.titlePre">تركيب </span><span class="ltr">GRC</span><span data-i18n="p4.titlePost"> شاطئ فريدة المنتزه</span></h3>
+              </div>
+              <svg class="pa-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </div>
+          </a>
+        </li>
+
+        <li class="pa-card" data-reveal style="--r:4">
+          <a href="project.html?id=5">
+            <div class="pa-media"><img src="assets/p5/hero.png" alt="تركيب GRC بوابة المعمورة المنتزه" loading="lazy" decoding="async" width="640" height="480"></div>
+            <div class="pa-foot">
+              <span class="pa-num">05</span>
+              <div class="pa-text">
+                <span class="pa-cat" data-i18n="pa.catGRC">مشاريع GRC</span>
+                <h3 class="pa-name"><span data-i18n="p5.titlePre">تركيب </span><span class="ltr">GRC</span><span data-i18n="p5.titlePost"> بوابة المعمورة المنتزه</span></h3>
+              </div>
+              <svg class="pa-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </div>
+          </a>
+        </li>
+
+        <li class="pa-card" data-reveal style="--r:5">
+          <a href="project.html?id=2">
+            <div class="pa-media"><img src="assets/p2/hero.jpeg" alt="ترميم وتطوير مبنى محطة مصر بالإسكندرية" loading="lazy" decoding="async" width="640" height="480"></div>
+            <div class="pa-foot">
+              <span class="pa-num">06</span>
+              <div class="pa-text">
+                <span class="pa-cat" data-i18n="pa.catRestoration">مشاريع الترميم</span>
+                <h3 class="pa-name" data-i18n="p2.title">ترميم وتطوير مبنى (محطة مصر) بالإسكندرية</h3>
+              </div>
+              <svg class="pa-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </div>
+          </a>
+        </li>
+
+        <li class="pa-card" data-reveal style="--r:6">
+          <a href="project.html?id=1">
+            <div class="pa-media"><img src="assets/p1/hero.jpg" alt="تركيب GRC مبنى ساحة المتحف اليوناني الروماني" loading="lazy" decoding="async" width="640" height="480"></div>
+            <div class="pa-foot">
+              <span class="pa-num">07</span>
+              <div class="pa-text">
+                <span class="pa-cat" data-i18n="pa.catRestoration">مشاريع الترميم</span>
+                <h3 class="pa-name"><span data-i18n="p1.titlePre">تركيب </span><span class="ltr">GRC</span><span data-i18n="p1.titlePost"> مبنى ساحة المتحف اليوناني الروماني</span></h3>
+              </div>
+              <svg class="pa-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="sec-cta proj-cta-row" data-reveal style="--r:7">
+        <div class="proj-cta-copy">
+          <p data-i18n="proj.similarProject1">لديك مشروع مشابه؟</p>
+          <p class="proj-cta-sub" data-i18n="proj.similarProject2">دعنا نحوله إلى حقيقة.</p>
+        </div>
+        <div class="proj-cta-actions">
+          <a class="proj-cta proj-cta--solid" href="index.html#contact">
+            <span data-i18n="ab.ctaContact">تواصل معنا</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8l9 6 9-6M4 6h16v12H4z"/></svg>
+          </a>
+          <a class="proj-cta proj-cta--ghost" href="tel:+201066581414">
+            <span data-i18n="ab.requestQuote">طلب عرض سعر</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="sec sec--footer" id="siteFooter">
+  <div class="sec-bg" aria-hidden="true"></div>
+  <div class="sec-inner">
+
+    <div class="footer-grid">
+      <div class="fo-brand" data-reveal style="--r:0">
+        <img src="assets/logo.png" alt="شعار المتحدة للإنشاءات والمقاولات" data-i18n-attr="alt:a11y.logo" width="541" height="461" loading="lazy" decoding="async">
+        <p class="fo-blurb" data-i18n="footer.blurb">نحوّل الأفكار إلى مشاريع واقعية بأعلى معايير الجودة والاحترافية لبناء مستقبل أفضل.</p>
+        <span class="fo-brand-rule" aria-hidden="true"></span>
+      </div>
+
+      <nav class="fo-col" data-reveal style="--r:1" aria-label="روابط سريعة">
+        <h3 class="fo-title" data-i18n="footer.quickLinks">روابط سريعة</h3>
+        <ul>
+          <li><a href="index.html#hero" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="about.html" data-i18n="nav.whoweare">من نحن</a></li>
+          <li><a href="index.html#services" data-i18n="nav.services">خدماتنا</a></li>
+          <li><a href="projects-all.html" data-i18n="nav.projects">مشاريعنا</a></li>
+          <li><a href="index.html#partners" data-i18n="nav.clients">عملاؤنا</a></li>
+          <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <nav class="fo-col" data-reveal style="--r:2" aria-label="خدماتنا">
+        <h3 class="fo-title" data-i18n="footer.services">خدماتنا</h3>
+        <ul>
+          <li><a href="index.html#services" data-i18n="footer.svc1">المقاولات العامة</a></li>
+          <li><a href="index.html#services" data-i18n="footer.svc2">التصميم المعماري</a></li>
+          <li><a href="index.html#services" data-i18n="footer.svc3">إدارة المشاريع</a></li>
+          <li><a href="index.html#services" data-i18n="footer.svc4">التشطيبات الداخلية</a></li>
+          <li><a href="index.html#services" data-i18n="footer.svc5">البنية التحتية</a></li>
+        </ul>
+      </nav>
+
+      <nav class="fo-col" data-reveal style="--r:3" aria-label="عن الشركة">
+        <h3 class="fo-title" data-i18n="footer.aboutCol">عن الشركة</h3>
+        <ul>
+          <li><a href="about.html" data-i18n="footer.aboutWho">من نحن</a></li>
+          <li><a href="about.html#who" data-i18n="footer.aboutVision">رؤيتنا</a></li>
+          <li><a href="about.html#why" data-i18n="footer.aboutValues">قيمنا</a></li>
+          <li><a href="about.html#flow" data-i18n="footer.aboutFlow">منهجية عملنا</a></li>
+          <li><a href="about.html#credentials" data-i18n="footer.aboutCert">اعتماداتنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="fo-col fo-col--contact" data-reveal style="--r:4">
+        <h3 class="fo-title" data-i18n="footer.contactCol">تواصل معنا</h3>
+        <ul class="fo-info">
+          <li>
+            <span class="fi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21.5s7-5.9 7-11a7 7 0 10-14 0c0 5.1 7 11 7 11z"/><circle cx="12" cy="10.3" r="2.7"/></svg></span>
+            <a href="https://www.google.com/maps/search/?api=1&query=31.1668088%2C29.8320788" target="_blank" rel="noopener" data-i18n="footer.addressBlock" data-i18n-html>21 طريق اسكندريه مطروح<br>ش مدرسه شيرين<br>قسم العامريه، اسكندريه</a>
+          </li>
+          <li>
+            <span class="fi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6.4 3.6h3.1l1.6 4-2 1.3a11.4 11.4 0 006 6l1.3-2 4 1.6v3.1a1.7 1.7 0 01-1.9 1.7C11.4 18.7 5.3 12.6 4.7 5.5a1.7 1.7 0 011.7-1.9z"/></svg></span>
+            <span class="fi-stack">
+              <a class="ltr-num" href="tel:+201066581414">+20 106 658 1414</a>
+              <a class="ltr-num" href="tel:+201288094950">+20 128 809 4950</a>
+              <a class="ltr-num" href="tel:+201004959092">+20 100 495 9092</a>
+              <a class="ltr-num" href="tel:+201212919025">+20 121 291 9025</a>
+            </span>
+          </li>
+          <li>
+            <span class="fi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5.4" width="18" height="13.2" rx="1.8"/><path d="M3.6 6.6L12 13l8.4-6.4"/></svg></span>
+            <a class="fi-mail" href="mailto:unitedconstructioncompany2020@gmail.com">unitedconstructioncompany2020@gmail.com</a>
+          </li>
+          <li>
+            <span class="fi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.2V12l3.2 2.1"/></svg></span>
+            <span class="fi-stack"><span data-i18n="footer.hours">السبت – الخميس</span><span class="ltr-num" data-i18n="footer.hoursTime">9:00 ص – 6:00 م</span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bar" data-reveal style="--r:5">
+      <span class="fb-rule" aria-hidden="true"></span>
+      <p class="fb-credit">
+        <span class="fb-en" data-i18n="footer.poweredBy">Powered by</span>
+        <a href="https://wa.me/201211179625" target="_blank" rel="noopener" aria-label="تواصل مع كريم علي على واتساب" data-i18n-attr="aria-label:a11y.whatsappKareem">Kareem Aly</a>
+      </p>
+      <span class="fb-rule" aria-hidden="true"></span>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button — company line, bottom-right -->
+<a href="https://wa.me/201066581414" target="_blank" rel="noopener"
+   class="wa-float" aria-label="تواصل معنا على واتساب" data-i18n-attr="aria-label:a11y.whatsapp">
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path fill="#25D366" d="M16.004 3C9.06 3 3.43 8.62 3.43 15.56c0 2.32.62 4.5 1.7 6.38L3 29l7.24-2.1a12.5 12.5 0 005.76 1.42h.01c6.94 0 12.57-5.62 12.57-12.56C28.58 8.62 22.95 3 16.004 3z"/>
+    <path fill="#FFF" d="M22.4 19.02c-.34-.17-2-1-2.3-1.1-.31-.12-.53-.17-.76.17-.22.34-.87 1.1-1.07 1.32-.2.23-.4.25-.73.09-.34-.17-1.43-.53-2.72-1.68-1-.9-1.68-2-1.88-2.34-.2-.34-.02-.52.15-.7.15-.15.34-.4.5-.6.17-.2.22-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.76-1.85-1.05-2.53-.27-.66-.55-.57-.76-.58l-.65-.01c-.22 0-.6.09-.9.43-.31.34-1.18 1.15-1.18 2.82s1.21 3.27 1.38 3.5c.17.22 2.38 3.63 5.76 5.09.8.35 1.44.55 1.93.71.81.26 1.55.22 2.14.13.65-.1 2-.82 2.28-1.6.28-.8.28-1.48.2-1.62-.08-.14-.3-.22-.64-.39z"/>
+  </svg>
+</a>
+
+<script src="i18n.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>

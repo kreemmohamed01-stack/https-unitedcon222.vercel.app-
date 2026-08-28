@@ -1,0 +1,610 @@
+/* ============================================================
+   ABOUT PAGE
+   ------------------------------------------------------------
+   Reuses every token, .sec shell, .proj-cta and .btn already
+   defined in style.css / project.css — this file only adds
+   what is unique to this page: the full-bleed hero, the who-we-
+   are gallery, the pillar/offer/flow grids and the credentials
+   lightbox.
+   ============================================================ */
+
+body.page-about{ padding-top:0; }
+
+
+/* ============================================================
+   1. HERO — full-bleed photo, copy overlaid (RTL: text on the
+   left, building breathing on the right, as in the reference)
+   ============================================================ */
+.ab-hero{
+  position:relative;
+  min-height:min(92vh,900px);
+  display:flex;
+  align-items:center;
+  padding-top:var(--header-h);
+  overflow:hidden;
+  background:#EFE3CB;
+}
+.ab-hero-bg{
+  position:absolute; inset:0;
+  background:url("assets/about/hero.jpeg") center left/cover no-repeat;
+  transform:scale(1.06);
+  animation:abHeroSettle 2.6s var(--ease-cine) forwards;
+}
+@keyframes abHeroSettle{ to{ transform:scale(1); } }
+
+/* Copy sits on the left in this RTL layout, the building breathes
+   on the right — so the solid veil has to fade in from the left
+   edge (physical, not logical: it must track screen sides, not
+   flip with direction) and open up toward the right. */
+.ab-hero-veil{
+  position:absolute; inset:0;
+  background:linear-gradient(to right,
+      rgba(247,241,224,1) 0%,
+      rgba(247,241,224,1) 44%,
+      rgba(247,241,224,.94) 54%,
+      rgba(247,241,224,.6) 66%,
+      rgba(247,241,224,.15) 78%,
+      rgba(247,241,224,0) 88%);
+}
+.ab-hero-orn{
+  position:absolute;
+  left:0;
+  top:0; bottom:0;
+  width:min(46vw,620px);
+  background-image:
+    radial-gradient(circle at 18% 20%, rgba(207,166,72,.14), transparent 60%),
+    repeating-linear-gradient(45deg, rgba(207,166,72,.08) 0 2px, transparent 2px 26px);
+  opacity:.7;
+  pointer-events:none;
+  -webkit-mask-image:linear-gradient(to right,#000 40%,transparent 92%);
+  mask-image:linear-gradient(to right,#000 40%,transparent 92%);
+}
+
+.ab-hero-inner{
+  position:relative;
+  z-index:1;
+  width:100%;
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:var(--gutter);
+  padding-block:clamp(2rem,5vw,3rem);
+  display:flex;
+  flex-direction:column;
+}
+.ab-hero-copy{ width:min(44%,540px); direction:rtl; text-align:right; }
+
+/* Top row: back link (start) + quote CTA (end) — same convention
+   as the project pages' .proj-top-row, just seeded with an extra
+   bottom margin so it clears the hero copy underneath it. */
+.ab-top-row{ margin-bottom:clamp(1.6rem,3.4vw,2.6rem); }
+
+.ab-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  font-size:.86rem;
+  font-weight:700;
+  color:var(--gold-900);
+  margin-top:clamp(2.6rem,5vw,3.6rem);
+}
+.ab-kicker .k-rule{
+  width:34px; height:1px;
+  background:linear-gradient(90deg,var(--gold-500),transparent);
+}
+
+.ab-title{
+  margin-top:.9rem;
+  font-family:var(--font-ar);
+  font-weight:800;
+  font-size:clamp(2.4rem,5.6vw,4.4rem);
+  line-height:1.16;
+  color:var(--ink-900);
+  max-width:14ch;
+}
+.ab-title em{
+  font-style:normal;
+  background:var(--gold-text);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.ab-lede{
+  margin-top:1.3rem;
+  max-width:42ch;
+  font-family:var(--font-ar-alt);
+  font-size:1rem;
+  line-height:1.95;
+  color:var(--ink-700);
+}
+
+.ab-hero-cta{ margin-top:1.8rem; }
+
+.ab-facts{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0;
+  margin-top:clamp(2.4rem,4.4vw,3.4rem);
+  padding:1.3rem 1.6rem;
+  border-radius:var(--radius-lg);
+  background:var(--ink-grad);
+  box-shadow:0 30px 60px -30px rgba(20,14,4,.5);
+  max-width:640px;
+}
+.ab-facts li{
+  flex:1 1 45%;
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+  padding:.6rem .8rem;
+}
+.af-icon{
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+  width:36px; height:36px;
+  border-radius:50%;
+  background:rgba(207,166,72,.16);
+  color:var(--gold-300);
+}
+.af-icon svg{
+  width:16px; height:16px;
+  fill:none; stroke:currentColor;
+  stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round;
+}
+.af-text{ display:grid; gap:.15rem; min-width:0; }
+.af-text small{
+  font-family:var(--font-ar-alt);
+  font-size:.7rem;
+  color:rgba(245,242,234,.55);
+}
+.af-text strong{
+  font-size:.85rem;
+  font-weight:700;
+  color:var(--gold-100);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+@media (max-width:900px){
+  .ab-hero{ min-height:auto; padding-bottom:clamp(2.4rem,6vw,3.4rem); }
+  .ab-hero-bg{ background-position:center 30%; }
+  .ab-hero-veil{
+    background:linear-gradient(180deg,
+        rgba(247,241,224,.55) 0%,
+        rgba(247,241,224,.94) 46%,
+        rgba(247,241,224,.99) 100%);
+  }
+  .ab-hero-orn{ display:none; }
+  .ab-hero-inner{ align-items:flex-start; }
+  .ab-hero-copy{ width:100%; }
+  .ab-facts{ max-width:none; }
+  .ab-top-row{ margin-bottom:1.2rem; }
+  .ab-facts li{ flex:1 1 100%; }
+}
+
+
+/* ============================================================
+   2. WHO WE ARE — gallery + copy
+   ============================================================ */
+.sec--ab-who{ padding-block:clamp(3rem,6vw,5.4rem); background:var(--cream-50,#FDFBF7); }
+
+.ab-who-grid{
+  display:grid;
+  grid-template-columns:1.05fr 1fr;
+  gap:clamp(2rem,4vw,4rem);
+  align-items:center;
+}
+@media (max-width:900px){
+  .ab-who-grid{ grid-template-columns:1fr; }
+}
+
+.ab-who-gallery{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:clamp(.8rem,1.6vw,1.2rem);
+}
+.awg-main{
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  aspect-ratio:3/4;
+  box-shadow:0 30px 60px -30px rgba(20,14,4,.4);
+}
+.awg-side{ display:grid; gap:clamp(.8rem,1.6vw,1.2rem); }
+.awg-shot{
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  aspect-ratio:1/1;
+  box-shadow:0 24px 46px -26px rgba(20,14,4,.4);
+}
+.ab-who-gallery img{
+  width:100%; height:100%;
+  object-fit:cover;
+  transition:transform 1.3s var(--ease-cine);
+}
+.awg-main:hover img,
+.awg-shot:hover img{ transform:scale(1.07); }
+
+.ab-who-copy .sec-title{ margin-top:.6rem; margin-bottom:1.1rem; }
+.ab-who-copy .sec-lede{ max-width:52ch; }
+.ab-who-cta{ margin-top:1.6rem; }
+
+
+/* ============================================================
+   3. WHY UNITED — pillar cards
+   ============================================================ */
+.sec--ab-why{ padding-block:clamp(3rem,6vw,5.4rem); }
+.sec--ab-why .sec-bg{ background-image:url("assets/sec2-bg.jpg"); opacity:.35; }
+.sec--ab-why .sec-head{ margin-bottom:clamp(2rem,4vw,3rem); }
+
+.ab-why-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:clamp(1rem,1.8vw,1.4rem);
+}
+@media (max-width:1080px){ .ab-why-grid{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:640px){ .ab-why-grid{ grid-template-columns:repeat(2,1fr); } }
+
+.ab-why-card{
+  text-align:center;
+  padding:clamp(1.6rem,2.6vw,2.1rem) 1.1rem;
+  border-radius:var(--radius-lg);
+  background:var(--cream-50,#FDFBF7);
+  border:1px solid rgba(207,166,72,.18);
+  box-shadow:0 18px 40px -30px rgba(20,14,4,.3);
+  transition:transform var(--t-btn) var(--ease-btn),
+             box-shadow var(--t-btn) var(--ease-btn),
+             border-color var(--t-btn) var(--ease-btn);
+}
+.ab-why-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 30px 56px -28px rgba(20,14,4,.4);
+  border-color:rgba(207,166,72,.5);
+}
+.awc-icon{
+  display:grid;
+  place-items:center;
+  width:60px; height:60px;
+  margin-inline:auto;
+  margin-bottom:1.1rem;
+  border-radius:50%;
+  background:rgba(207,166,72,.12);
+  color:var(--gold-700);
+  transition:transform var(--t-btn) var(--ease-btn),
+             background var(--t-btn) var(--ease-btn);
+}
+.ab-why-card:hover .awc-icon{
+  transform:scale(1.08) rotate(-4deg);
+  background:rgba(207,166,72,.2);
+}
+.awc-icon svg{
+  width:26px; height:26px;
+  fill:none; stroke:currentColor;
+  stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round;
+}
+.ab-why-card h3{
+  font-size:.98rem;
+  font-weight:800;
+  color:var(--ink-900);
+  margin-bottom:.4rem;
+}
+.ab-why-card p{
+  font-family:var(--font-ar-alt);
+  font-size:.8rem;
+  line-height:1.7;
+  color:var(--ink-500);
+}
+
+
+/* ============================================================
+   4. WHAT WE OFFER — service cards with photos
+   ============================================================ */
+.sec--ab-offer{ padding-block:clamp(3rem,6vw,5.4rem); background:var(--cream-50,#FDFBF7); }
+.sec--ab-offer .sec-head{ margin-bottom:clamp(2rem,4vw,3rem); }
+
+.ab-offer-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:clamp(1rem,1.8vw,1.4rem);
+}
+@media (max-width:1080px){ .ab-offer-grid{ grid-template-columns:repeat(2,1fr); } }
+
+.ab-offer-card{
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 18px 40px -28px rgba(20,14,4,.32);
+  transition:transform var(--t-btn) var(--ease-btn),
+             box-shadow var(--t-btn) var(--ease-btn);
+}
+.ab-offer-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 28px 54px -26px rgba(20,14,4,.42);
+}
+.aoc-media{
+  aspect-ratio:4/3;
+  overflow:hidden;
+}
+.aoc-media img{
+  width:100%; height:100%;
+  object-fit:cover;
+  transition:transform 1.3s var(--ease-cine);
+}
+.ab-offer-card:hover .aoc-media img{ transform:scale(1.09); }
+.aoc-foot{ padding:1.2rem 1.3rem 1.4rem; }
+.aoc-foot h3{
+  font-size:.98rem;
+  font-weight:800;
+  color:var(--ink-900);
+  margin-bottom:.5rem;
+}
+.aoc-foot p{
+  font-family:var(--font-ar-alt);
+  font-size:.8rem;
+  line-height:1.75;
+  color:var(--ink-500);
+}
+
+
+/* ============================================================
+   5. METHODOLOGY — step track
+   ============================================================ */
+.sec--ab-flow{ padding-block:clamp(3rem,6vw,5.4rem); }
+.sec--ab-flow .sec-bg{ background-image:url("assets/sec5-bg.jpg"); opacity:.3; }
+.sec--ab-flow .sec-head{ margin-bottom:clamp(2.2rem,4.4vw,3.4rem); }
+
+.ab-flow-track{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:clamp(.8rem,1.6vw,1.2rem);
+  counter-reset:flow;
+}
+@media (max-width:900px){ .ab-flow-track{ grid-template-columns:repeat(2,1fr); } }
+
+.afl-step{
+  position:relative;
+  text-align:center;
+  padding:clamp(1.6rem,2.6vw,2rem) 1rem;
+  border-radius:var(--radius-lg);
+  background:var(--cream-50,#FDFBF7);
+  border:1px solid rgba(207,166,72,.16);
+  transition:transform var(--t-btn) var(--ease-btn),
+             box-shadow var(--t-btn) var(--ease-btn);
+}
+.afl-step:hover{
+  transform:translateY(-5px);
+  box-shadow:0 22px 44px -28px rgba(20,14,4,.36);
+}
+.afl-icon{
+  display:grid;
+  place-items:center;
+  width:56px; height:56px;
+  margin-inline:auto;
+  margin-bottom:.9rem;
+  border-radius:50%;
+  border:1px solid rgba(207,166,72,.4);
+  color:var(--gold-700);
+  transition:transform var(--t-btn) var(--ease-btn),
+             background var(--t-btn) var(--ease-btn),
+             color var(--t-btn) var(--ease-btn);
+}
+.afl-step:hover .afl-icon{
+  transform:scale(1.08);
+  background:var(--gold-grad);
+  color:#fff;
+}
+.afl-icon svg{
+  width:24px; height:24px;
+  fill:none; stroke:currentColor;
+  stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round;
+}
+.afl-num{
+  display:block;
+  font-family:var(--font-en);
+  font-weight:600;
+  font-size:1.3rem;
+  color:var(--gold-300);
+  margin-bottom:.3rem;
+}
+.afl-step h3{
+  font-size:.92rem;
+  font-weight:800;
+  color:var(--ink-900);
+  margin-bottom:.35rem;
+}
+.afl-step p{
+  font-family:var(--font-ar-alt);
+  font-size:.76rem;
+  line-height:1.7;
+  color:var(--ink-500);
+}
+
+
+/* ============================================================
+   6. CREDENTIALS — cards that open a lightbox
+   ============================================================ */
+.sec--ab-cert{ padding-block:clamp(3rem,6vw,5.4rem); background:var(--cream-50,#FDFBF7); }
+.sec--ab-cert .sec-head{ margin-bottom:clamp(2rem,4vw,3rem); }
+
+.ab-cert-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:clamp(1.4rem,2.6vw,2.2rem);
+  max-width:720px;
+  margin-inline:auto;
+}
+@media (max-width:640px){ .ab-cert-grid{ max-width:420px; } }
+
+.acc-btn{
+  position:relative;
+  display:block;
+  width:100%;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  isolation:isolate;
+  box-shadow:0 18px 40px -26px rgba(20,14,4,.36);
+  transition:transform var(--t-btn) var(--ease-btn),
+             box-shadow var(--t-btn) var(--ease-btn);
+}
+.acc-btn:hover{
+  transform:translateY(-6px);
+  box-shadow:0 30px 58px -26px rgba(20,14,4,.46);
+}
+.acc-media{
+  display:block;
+  aspect-ratio:3/4;
+  background:var(--ink-800);
+}
+.acc-media img{
+  width:100%; height:100%;
+  object-fit:cover;
+  transition:transform 1.3s var(--ease-cine), filter var(--t-btn) var(--ease-btn);
+}
+.acc-btn:hover .acc-media img{ transform:scale(1.06); filter:brightness(.75); }
+
+.acc-zoom{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  opacity:0;
+  transition:opacity var(--t-btn) var(--ease-btn);
+}
+.acc-zoom svg{
+  width:44px; height:44px;
+  fill:none; stroke:#fff;
+  stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round;
+  filter:drop-shadow(0 6px 16px rgba(0,0,0,.4));
+  transform:scale(.8);
+  transition:transform var(--t-btn) var(--ease-btn);
+}
+.acc-btn:hover .acc-zoom{ opacity:1; }
+.acc-btn:hover .acc-zoom svg{ transform:scale(1); }
+
+.acc-label{
+  position:absolute;
+  inset-inline:0;
+  bottom:0;
+  padding:1rem 1.1rem;
+  font-size:.88rem;
+  font-weight:700;
+  color:#fff;
+  text-align:center;
+  background:linear-gradient(0deg,rgba(10,8,4,.82),transparent);
+}
+
+
+/* ============================================================
+   7. FINAL CTA — same shell as project.css .proj-cta-row
+   ============================================================ */
+.ab-final-cta{
+  max-width:var(--maxw);
+  margin-inline:auto;
+  margin-block:clamp(1rem,3vw,2rem);
+  padding-inline:var(--gutter);
+}
+
+
+/* ============================================================
+   8. CREDENTIAL LIGHTBOX
+   ============================================================ */
+.ab-lightbox{
+  position:fixed;
+  inset:0;
+  z-index:200;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(1.2rem,4vw,3rem);
+  background:rgba(10,8,4,.86);
+  -webkit-backdrop-filter:blur(6px);
+  backdrop-filter:blur(6px);
+  opacity:0;
+  animation:ablIn .35s var(--ease-out) forwards;
+}
+.ab-lightbox[hidden]{ display:none; }
+@keyframes ablIn{ to{ opacity:1; } }
+
+.abl-close{
+  position:absolute;
+  top:clamp(1rem,3vw,1.8rem);
+  inset-inline-end:clamp(1rem,3vw,1.8rem);
+  display:grid;
+  place-items:center;
+  width:44px; height:44px;
+  border-radius:50%;
+  color:#fff;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.25);
+  transition:background var(--t-btn) var(--ease-btn),
+             transform var(--t-btn) var(--ease-btn);
+}
+.abl-close:hover{ background:rgba(255,255,255,.2); transform:rotate(90deg); }
+.abl-close svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; }
+
+.abl-figure{
+  max-width:min(90vw,760px);
+  max-height:88vh;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:1rem;
+  transform:scale(.92);
+  opacity:0;
+  animation:ablZoom .45s .05s var(--ease-cine) forwards;
+}
+@keyframes ablZoom{ to{ transform:scale(1); opacity:1; } }
+
+.abl-figure img{
+  max-width:100%;
+  max-height:76vh;
+  width:auto;
+  border-radius:14px;
+  box-shadow:0 40px 90px -30px rgba(0,0,0,.6);
+}
+.abl-figure figcaption{
+  font-size:.92rem;
+  font-weight:700;
+  color:#F5F2EA;
+}
+
+
+/* ============================================================
+   9. MOBILE — every card grid on this page locks to two columns
+   (never a single stacked column) and every card shrinks to fit.
+   ============================================================ */
+@media (max-width:640px){
+
+  /* pillars */
+  .ab-why-card{ padding:1.2rem .8rem; }
+  .awc-icon{ width:46px; height:46px; margin-bottom:.7rem; }
+  .awc-icon svg{ width:20px; height:20px; }
+  .ab-why-card h3{ font-size:.82rem; margin-bottom:.25rem; }
+  .ab-why-card p{ font-size:.7rem; line-height:1.55; }
+
+  /* offer cards */
+  .ab-offer-grid{ gap:.7rem; }
+  .aoc-foot{ padding:.8rem .85rem 1rem; }
+  .aoc-foot h3{ font-size:.82rem; margin-bottom:.3rem; }
+  .aoc-foot p{ font-size:.7rem; line-height:1.55; }
+
+  /* methodology steps */
+  .ab-flow-track{ gap:.7rem; }
+  .afl-step{ padding:1.2rem .7rem; }
+  .afl-icon{ width:42px; height:42px; margin-bottom:.6rem; }
+  .afl-icon svg{ width:19px; height:19px; }
+  .afl-num{ font-size:1.05rem; margin-bottom:.2rem; }
+  .afl-step h3{ font-size:.78rem; margin-bottom:.25rem; }
+  .afl-step p{ font-size:.68rem; line-height:1.5; }
+
+  /* credential cards */
+  .ab-cert-grid{ gap:.8rem; }
+  .acc-label{ padding:.7rem .6rem; font-size:.74rem; }
+  .acc-zoom svg{ width:32px; height:32px; }
+
+  /* who-we-are gallery: keep the 2-up rhythm, just tighter */
+  .ab-who-gallery{ gap:.6rem; }
+  .awg-side{ gap:.6rem; }
+}
