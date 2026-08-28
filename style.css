@@ -531,14 +531,19 @@ body.nav-open{ overflow:hidden; }
 .lang-menu{
   position:absolute;
   top:calc(100% + .5rem);
-  /* The switch sits hard against the header's outer edge, so the
-     panel has to grow inward or it clips off-screen. inset-inline-end
-     is direction-aware: it lands on the physical right in RTL and
-     the physical left in LTR, so the panel never spills past the
-     viewport edge in either language. */
-  inset-inline-end:0;
+  /* .header-actions (holding the switch) sits at the header's own
+     *start* edge in both directions (justify-self:start on the
+     grid column) — right in RTL, left in LTR. So the switch itself
+     always sits near the outer edge, and the panel has to grow
+     toward the header's centre — i.e. from the switch's inline-
+     start edge outward — or it runs straight off that outer edge.
+     inset-inline-start is direction-aware, so this holds in both
+     languages without a separate override. max-width is a hard
+     backstop so it can never exceed the viewport regardless. */
+  inset-inline-start:0;
   z-index:20;
   min-width:132px;
+  max-width:calc(100vw - 1.6rem);
   padding:.3rem;
   display:grid;
   gap:.12rem;
