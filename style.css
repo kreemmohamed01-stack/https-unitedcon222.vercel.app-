@@ -494,6 +494,24 @@ body.nav-open{ overflow:hidden; }
 .nav-link.is-active{ color:var(--gold-900); }
 .nav-link.is-active::after{ transform:scaleX(1); }
 
+/* --- Plain label in the nav row: a name, not a link ---
+   Same size/rhythm as the nav links so it sits in the row without
+   drawing attention, but no underline and no hover state — it
+   isn't interactive, so it shouldn't look like it is. */
+.nav-label{
+  display:inline-block;
+  padding:.5rem 0;
+  font-size:clamp(.86rem,.95vw,.98rem);
+  font-weight:700;
+  font-style:normal;
+  color:var(--gold-900);
+  letter-spacing:.004em;
+  text-transform:uppercase;
+  text-shadow:0 1px 12px rgba(255,253,248,.95),
+              0 1px 3px rgba(255,253,248,.8);
+  white-space:nowrap;
+}
+
 /* --- Actions --- */
 .header-actions{
   display:flex;
@@ -779,6 +797,19 @@ html[dir="ltr"] .mobile-menu{ --mm-park:-102%; --mm-shadow-x:34px; --mm-gleam-x:
   transition:color var(--t-btn) var(--ease-btn),
              background-color var(--t-btn) var(--ease-btn),
              border-color var(--t-btn) var(--ease-btn);
+}
+
+/* Same plain, non-interactive label as the desktop nav — a name
+   sitting in the drawer's link list without acting like a link. */
+.mobile-menu nav .nav-label{
+  display:flex;
+  align-items:center;
+  gap:.85rem;
+  padding:.72rem .85rem;
+  font-size:.88rem;
+  letter-spacing:.01em;
+  color:var(--gold-300);
+  text-shadow:none;
 }
 
 /* --- Staggered inner reveal ---
@@ -3183,6 +3214,15 @@ html[dir="ltr"] .pg-more svg{ animation-name:pgMoreNudgeLtr; }
 }
 .fo-info a:hover{ color:var(--gold-900); }
 .fi-mail{ font-family:var(--font-en) !important; font-size:.82rem !important; }
+
+/* Plain name line under the email — not a link, just a caption */
+.fi-name{
+  display:block;
+  margin-top:.2rem;
+  font-family:var(--font-ar-alt);
+  font-size:.78rem;
+  color:var(--gold-700);
+}
 
 /* --- Bottom bar --- */
 .footer-bar{
