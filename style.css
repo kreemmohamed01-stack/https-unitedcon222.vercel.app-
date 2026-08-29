@@ -497,19 +497,41 @@ body.nav-open{ overflow:hidden; }
 /* --- Plain label in the nav row: a name, not a link ---
    Same size/rhythm as the nav links so it sits in the row without
    drawing attention, but no underline and no hover state — it
-   isn't interactive, so it shouldn't look like it is. */
+   isn't interactive, so it shouldn't look like it is. The gold
+   fill sweeps a bright highlight band across the letters on a
+   slow loop — a quiet shimmer, not a flashy animation. */
 .nav-label{
   display:inline-block;
   padding:.5rem 0;
+  font-family:var(--font-ar);
   font-size:clamp(.86rem,.95vw,.98rem);
   font-weight:700;
   font-style:normal;
-  color:var(--gold-900);
-  letter-spacing:.004em;
-  text-transform:uppercase;
-  text-shadow:0 1px 12px rgba(255,253,248,.95),
-              0 1px 3px rgba(255,253,248,.8);
+  letter-spacing:.01em;
   white-space:nowrap;
+  background-image:linear-gradient(100deg,
+      var(--gold-700) 0%,
+      var(--gold-700) 38%,
+      #FFF6DC 50%,
+      var(--gold-500) 62%,
+      var(--gold-700) 100%);
+  background-size:240% 100%;
+  background-position:100% 0;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  animation:navLabelShine 5.5s linear infinite;
+}
+@keyframes navLabelShine{
+  0%{ background-position:180% 0; }
+  100%{ background-position:-80% 0; }
+}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){
+  .nav-label{ color:var(--gold-900); -webkit-text-fill-color:var(--gold-900); animation:none; }
+}
+@media (prefers-reduced-motion:reduce){
+  .nav-label{ animation:none; background-position:0 0; }
 }
 
 /* --- Actions --- */
@@ -800,7 +822,9 @@ html[dir="ltr"] .mobile-menu{ --mm-park:-102%; --mm-shadow-x:34px; --mm-gleam-x:
 }
 
 /* Same plain, non-interactive label as the desktop nav — a name
-   sitting in the drawer's link list without acting like a link. */
+   sitting in the drawer's link list without acting like a link.
+   The dark panel needs a brighter sweep than the ivory header for
+   the shimmer to read the same way. */
 .mobile-menu nav .nav-label{
   display:flex;
   align-items:center;
@@ -808,8 +832,12 @@ html[dir="ltr"] .mobile-menu{ --mm-park:-102%; --mm-shadow-x:34px; --mm-gleam-x:
   padding:.72rem .85rem;
   font-size:.88rem;
   letter-spacing:.01em;
-  color:var(--gold-300);
-  text-shadow:none;
+  background-image:linear-gradient(100deg,
+      var(--gold-300) 0%,
+      var(--gold-300) 38%,
+      #FFFBEF 50%,
+      var(--gold-100) 62%,
+      var(--gold-300) 100%);
 }
 
 /* --- Staggered inner reveal ---
@@ -3215,13 +3243,35 @@ html[dir="ltr"] .pg-more svg{ animation-name:pgMoreNudgeLtr; }
 .fo-info a:hover{ color:var(--gold-900); }
 .fi-mail{ font-family:var(--font-en) !important; font-size:.82rem !important; }
 
-/* Plain name line under the email — not a link, just a caption */
+/* Plain name line under the email — not a link, just a caption.
+   Same shimmering gold fill as the nav label, tuned down slightly
+   in size to read as a caption rather than a headline. */
 .fi-name{
   display:block;
-  margin-top:.2rem;
-  font-family:var(--font-ar-alt);
-  font-size:.78rem;
-  color:var(--gold-700);
+  margin-top:.25rem;
+  font-family:var(--font-ar);
+  font-weight:700;
+  font-size:.82rem;
+  letter-spacing:.01em;
+  background-image:linear-gradient(100deg,
+      var(--gold-700) 0%,
+      var(--gold-700) 38%,
+      #FFF6DC 50%,
+      var(--gold-500) 62%,
+      var(--gold-700) 100%);
+  background-size:240% 100%;
+  background-position:100% 0;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  animation:navLabelShine 5.5s linear infinite;
+}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){
+  .fi-name{ color:var(--gold-700); -webkit-text-fill-color:var(--gold-700); animation:none; }
+}
+@media (prefers-reduced-motion:reduce){
+  .fi-name{ animation:none; background-position:0 0; }
 }
 
 /* --- Bottom bar --- */
@@ -3423,9 +3473,14 @@ html[dir="ltr"] .pg-more svg{ animation-name:pgMoreNudgeLtr; }
   .fo-brand img{ height:clamp(78px,20vw,100px); margin-inline:auto; }
   .fo-blurb{ margin-inline:auto; font-size:.86rem; }
   .fo-brand-rule{ margin-inline:auto; }
-  /* two columns, two rows: quick links + services, then about +
-     contact — so "تواصل معنا" sits beside "عن الشركة", not under it */
-  .fo-col--contact{ grid-column:auto; }
+  /* two columns, two rows: quick links + services, then contact +
+     about. Source order is quick-links, services, about, contact —
+     in RTL, grid column 1 is the visual right, so contact (which
+     carries the name under the email) is placed explicitly in
+     row 2 / column 1 to land on the right, with about pushed to
+     column 2 beside it. */
+  .fo-col--contact{ grid-column:1; grid-row:2; }
+  .footer-grid nav.fo-col:nth-of-type(3){ grid-column:2; grid-row:2; }
   .fo-title{ font-size:.94rem; margin-bottom:1.1rem; }
   .fo-col ul a{ font-size:.84rem; }
   .fo-info li{ gap:.55rem; padding-bottom:.8rem; }

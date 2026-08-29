@@ -31,7 +31,7 @@
     'nav.services':     { ar: 'خدماتنا',         en: 'Services' },
     'nav.projects':     { ar: 'مشاريعنا',        en: 'Projects' },
     'nav.fields':       { ar: 'مجالات التنفيذ',   en: 'Work Fields' },
-    'nav.engName':      { ar: 'م. جمال',          en: 'Eng. Gamal' },
+    'nav.engName':      { ar: 'م / جمال محمد صبحى', en: 'Eng. Gamal Mohamed Sobhy' },
     'nav.media':        { ar: 'المركز الإعلامي', en: 'Media Center' },
     'nav.careers':      { ar: 'وظائف',           en: 'Careers' },
     'nav.contact':      { ar: 'تواصل معنا',      en: 'Contact Us' },
