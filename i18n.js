@@ -30,6 +30,7 @@
     'nav.about':        { ar: 'عن الشركة',       en: 'About Us' },
     'nav.services':     { ar: 'خدماتنا',         en: 'Services' },
     'nav.projects':     { ar: 'مشاريعنا',        en: 'Projects' },
+    'nav.fields':       { ar: 'مجالات التنفيذ',   en: 'Work Fields' },
     'nav.media':        { ar: 'المركز الإعلامي', en: 'Media Center' },
     'nav.careers':      { ar: 'وظائف',           en: 'Careers' },
     'nav.contact':      { ar: 'تواصل معنا',      en: 'Contact Us' },
@@ -323,7 +324,36 @@
 
     'pa.catSpecial':     { ar: 'أعمال خاصة', en: 'Special Works' },
     'pa.catGRC':         { ar: 'مشاريع GRC', en: 'GRC Projects' },
-    'pa.catRestoration': { ar: 'مشاريع الترميم', en: 'Restoration Projects' }
+    'pa.catRestoration': { ar: 'مشاريع الترميم', en: 'Restoration Projects' },
+
+    /* ---------- fields.html (Work Fields) ---------- */
+    'fl.pageTitle': { ar: 'مجالات التنفيذ | المتحدة للإنشاءات والمقاولات', en: 'Work Fields | United Construction' },
+    'fl.kicker': { ar: 'مجالات التنفيذ', en: 'OUR WORK CATEGORIES' },
+    'fl.title':  { ar: 'مجالات <em>التنفيذ</em>', en: 'Our Work <em>Categories</em>' },
+    'fl.lede': { ar: 'ننفذ أعمالنا بأعلى معايير الجودة والدقة، في مختلف المجالات لنحول التصميم إلى واقع يدوم.',
+                  en: 'We execute our work to the highest standards of quality and precision, across every field, turning design into a lasting reality.' },
+    'fl.more': { ar: 'عرض المزيد', en: 'View More' },
+    'fl.ctaSub': { ar: 'دعنا نساعدك على تنفيذه بأعلى جودة.', en: 'Let us help you deliver it at the highest quality.' },
+
+    'fl.f1.title':   { ar: 'أعمال السيراميك', en: 'Ceramic Works' },
+    'fl.f1.titleEn': { ar: 'Ceramic Works', en: 'Ceramic Works' },
+    'fl.f1.desc':    { ar: 'توريد وتركيب السيراميك بجودة عالية وتشطيبات احترافية تناسب جميع المساحات.',
+                        en: 'Supplying and installing ceramic tiles with high quality and professional finishes suited to every space.' },
+
+    'fl.f2.title':   { ar: 'أعمال الموزايكو', en: 'Mosaic Works' },
+    'fl.f2.titleEn': { ar: 'Mosaic Works', en: 'Mosaic Works' },
+    'fl.f2.desc':    { ar: 'تنفيذ أعمال الموزايكو بكافة أشكالها وألوانها للمداخل والأرضيات والتفاصيل الجمالية.',
+                        en: 'Executing mosaic work in every shape and color for entrances, flooring and aesthetic detailing.' },
+
+    'fl.f3.title':   { ar: 'أعمال الدهانات', en: 'Painting Works' },
+    'fl.f3.titleEn': { ar: 'Painting Works', en: 'Painting Works' },
+    'fl.f3.desc':    { ar: 'جميع أعمال الدهان الداخلي والخارجي بأفضل الخامات والألوان وبأيدي متخصصة.',
+                        en: 'All interior and exterior painting works with the finest materials, colors and specialized hands.' },
+
+    'fl.f4.title':   { ar: 'أعمال المباني', en: 'Building Works' },
+    'fl.f4.titleEn': { ar: 'Building Works', en: 'Building Works' },
+    'fl.f4.desc':    { ar: 'تنفيذ أعمال المباني والحوائط والسور والترميمات بجودة عالية ومتانة تدوم.',
+                        en: 'Executing building, wall, fencing and restoration works with high quality and lasting durability.' }
   };
 
   /* ==========================================================

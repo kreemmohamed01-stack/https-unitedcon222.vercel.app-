@@ -467,6 +467,10 @@ body.nav-open{ overflow:hidden; }
   font-weight:700;
   color:var(--ink-800);
   letter-spacing:.004em;
+  /* All-caps menu label. Arabic script has no case, so this only
+     visibly affects the English nav (and any Latin fragment inside
+     an Arabic label) — Arabic text renders exactly as written. */
+  text-transform:uppercase;
   /* the bar is transparent, so each link carries its own halo */
   text-shadow:0 1px 12px rgba(255,253,248,.95),
               0 1px 3px rgba(255,253,248,.8);
@@ -769,6 +773,7 @@ html[dir="ltr"] .mobile-menu{ --mm-park:-102%; --mm-shadow-x:34px; --mm-gleam-x:
   font-size:.88rem;
   font-weight:700;
   letter-spacing:.01em;
+  text-transform:uppercase;   /* matches the desktop nav; Arabic is unaffected */
   color:rgba(238,232,220,.78);
   border:1px solid transparent;
   transition:color var(--t-btn) var(--ease-btn),

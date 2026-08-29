@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-i18n-title="fl.pageTitle">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#F7F3EC">
-<title id="pageTitle">تفاصيل المشروع | المتحدة للإنشاءات والمقاولات</title>
+<title>مجالات التنفيذ | المتحدة للإنشاءات والمقاولات</title>
+<meta name="description" content="مجالات تنفيذ المتحدة للإنشاءات والمقاولات — أعمال السيراميك والموزايكو والدهانات والمباني بأعلى معايير الجودة والدقة.">
 
 <link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="preload" as="image" href="assets/fields/background.jpeg" fetchpriority="high">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +16,7 @@
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="project.css">
+<link rel="stylesheet" href="fields.css">
 <link rel="stylesheet" href="i18n.css">
 
 <noscript>
@@ -25,7 +28,7 @@
 </noscript>
 </head>
 
-<body class="is-preload is-ready anim-done page-project">
+<body class="is-preload is-ready anim-done page-project page-fields">
 
 <header class="site-header is-stuck" id="siteHeader">
   <div class="header-inner">
@@ -39,8 +42,8 @@
         <li><a class="nav-link" href="index.html#hero" data-anim="nav" data-i18n="nav.home">الرئيسية</a></li>
         <li><a class="nav-link" href="about.html" data-anim="nav" data-i18n="nav.about">عن الشركة</a></li>
         <li><a class="nav-link" href="index.html#services" data-anim="nav" data-i18n="nav.services">خدماتنا</a></li>
-        <li><a class="nav-link" href="fields.html" data-anim="nav" data-i18n="nav.fields">مجالات التنفيذ</a></li>
-        <li><a class="nav-link is-active" href="index.html#projects" data-anim="nav" data-i18n="nav.projects">مشاريعنا</a></li>
+        <li><a class="nav-link is-active" href="fields.html" data-anim="nav" data-i18n="nav.fields">مجالات التنفيذ</a></li>
+        <li><a class="nav-link" href="projects-all.html" data-anim="nav" data-i18n="nav.projects">مشاريعنا</a></li>
         <li><a class="nav-link" href="index.html#partners" data-anim="nav" data-i18n="nav.clients">عملاؤنا</a></li>
         <li><a class="nav-link" href="index.html#contact" data-anim="nav" data-i18n="nav.contact">تواصل معنا</a></li>
       </ul>
@@ -89,8 +92,8 @@
       <li><a href="index.html#hero"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 10.6L12 4l8 6.6"/><path d="M6 9.4V20h12V9.4"/><path d="M10 20v-5.4h4V20"/></svg></span><span data-i18n="nav.home">الرئيسية</span></a></li>
       <li><a href="about.html"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg></span><span data-i18n="nav.whoweare">من نحن</span></a></li>
       <li><a href="index.html#services"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.4" height="6.4" rx="1.2"/><rect x="13.6" y="4" width="6.4" height="6.4" rx="1.2"/><rect x="4" y="13.6" width="6.4" height="6.4" rx="1.2"/><rect x="13.6" y="13.6" width="6.4" height="6.4" rx="1.2"/></svg></span><span data-i18n="nav.services">خدماتنا</span></a></li>
-      <li><a href="fields.html"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 5h9l5 5v9a2 2 0 01-2 2H6a2 2 0 01-2-2V7a2 2 0 012-2z"/><path d="M15 5v5h5"/></svg></span><span data-i18n="nav.fields">مجالات التنفيذ</span></a></li>
-      <li><a class="is-active" href="index.html#projects"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V6.4A1.4 1.4 0 015.4 5h6.2A1.4 1.4 0 0113 6.4V20"/><path d="M13 20v-8.6h5.6A1.4 1.4 0 0120 12.8V20"/><path d="M2.6 20h18.8"/><path d="M6.6 9h1.8M9.8 9h1.8M6.6 13h1.8M9.8 13h1.8M15.6 15h1.8"/></svg></span><span data-i18n="nav.projects">مشاريعنا</span></a></li>
+      <li><a class="is-active" href="fields.html"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 5h9l5 5v9a2 2 0 01-2 2H6a2 2 0 01-2-2V7a2 2 0 012-2z"/><path d="M15 5v5h5"/></svg></span><span data-i18n="nav.fields">مجالات التنفيذ</span></a></li>
+      <li><a href="projects-all.html"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V6.4A1.4 1.4 0 015.4 5h6.2A1.4 1.4 0 0113 6.4V20"/><path d="M13 20v-8.6h5.6A1.4 1.4 0 0120 12.8V20"/><path d="M2.6 20h18.8"/><path d="M6.6 9h1.8M9.8 9h1.8M6.6 13h1.8M9.8 13h1.8M15.6 15h1.8"/></svg></span><span data-i18n="nav.projects">مشاريعنا</span></a></li>
       <li><a href="index.html#partners"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="9.4" cy="8.4" r="3.1"/><path d="M3.4 19c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.6a3 3 0 010 5.7"/><path d="M17.4 13.4c1.9.7 3.2 2.5 3.2 4.6"/></svg></span><span data-i18n="nav.clients">عملاؤنا</span></a></li>
       <li><a href="index.html#contact"><span class="mi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5.4" width="18" height="13.2" rx="1.8"/><path d="M3.6 6.6L12 13l8.4-6.4"/></svg></span><span data-i18n="nav.contact">تواصل معنا</span></a></li>
     </ul>
@@ -124,83 +127,134 @@
 <main>
 
   <!-- ============================================================
-       PROJECT HERO
+       WORK FIELDS — HERO BAND
        ============================================================ -->
-  <section class="proj-hero">
-    <div class="proj-hero-inner">
+  <section class="proj-hero fl-hero">
+    <div class="fl-hero-bg" aria-hidden="true"></div>
+    <div class="fl-hero-veil" aria-hidden="true"></div>
+
+    <div class="proj-hero-inner fl-hero-inner">
 
       <div class="proj-top-row">
-        <a class="proj-back" href="index.html#projects">
+        <a class="proj-back" href="index.html#hero">
           <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
-          <span data-i18n="proj.backToProjects">العودة إلى المشاريع</span>
-        </a>
-
-        <a class="proj-cta proj-cta--top" href="tel:+201066581414">
-          <span data-i18n="ab.requestQuote">طلب عرض سعر</span>
-          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          <span data-i18n="proj.backToHome">العودة إلى الرئيسية</span>
         </a>
       </div>
 
-      <div class="proj-hero-grid">
-        <div class="proj-hero-copy">
-          <p class="proj-cat" id="projCategory" data-reveal style="--r:0"></p>
-          <h1 class="proj-title" id="projTitle" data-reveal style="--r:1"></h1>
-          <span class="proj-rule" data-reveal style="--r:2" aria-hidden="true"></span>
-          <p class="proj-lede" id="projLede" data-reveal style="--r:3"></p>
-
-          <ul class="proj-meta" data-reveal style="--r:4">
-            <li>
-              <span class="pm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.4" height="6.4" rx="1.2"/><rect x="13.6" y="4" width="6.4" height="6.4" rx="1.2"/><rect x="4" y="13.6" width="6.4" height="6.4" rx="1.2"/><rect x="13.6" y="13.6" width="6.4" height="6.4" rx="1.2"/></svg></span>
-              <span class="pm-text"><small data-i18n="proj.metaType">نوع المشروع</small><strong id="projType"></strong></span>
-            </li>
-            <li>
-              <span class="pm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3.4" y="4.6" width="17.2" height="16" rx="1.8"/><path d="M3.4 9.4h17.2M7.4 3v3.2M16.6 3v3.2"/></svg></span>
-              <span class="pm-text"><small data-i18n="proj.metaDuration">مدة التنفيذ</small><strong id="projDuration"></strong></span>
-            </li>
-            <li>
-              <span class="pm-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21.5s7-5.9 7-11a7 7 0 10-14 0c0 5.1 7 11 7 11z"/><circle cx="12" cy="10.3" r="2.7"/></svg></span>
-              <span class="pm-text"><small data-i18n="proj.metaLocation">الموقع</small><strong id="projLocation"></strong></span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="proj-hero-media" data-reveal style="--r:2">
-          <img id="projHeroImg" src="" alt="">
-        </div>
+      <div class="pa-hero-copy">
+        <p class="proj-cat" data-reveal style="--r:0" data-i18n="fl.kicker">مجالات التنفيذ</p>
+        <h1 class="pa-title" data-reveal style="--r:1" data-i18n="fl.title" data-i18n-html>مجالات <em>التنفيذ</em></h1>
+        <span class="proj-rule" data-reveal style="--r:2" aria-hidden="true"></span>
+        <p class="proj-lede" data-reveal style="--r:3" data-i18n="fl.lede">
+          ننفذ أعمالنا بأعلى معايير الجودة والدقة، في مختلف المجالات
+          لنحول التصميم إلى واقع يدوم.
+        </p>
       </div>
+
     </div>
   </section>
 
   <!-- ============================================================
-       PROJECT JOURNEY
+       FIELD ROWS
        ============================================================ -->
-  <section class="sec sec--journey" id="journey">
+  <section class="sec sec--fl-rows" id="fields">
     <div class="sec-bg" aria-hidden="true"></div>
     <div class="sec-inner">
 
-      <div class="sec-head">
-        <h2 class="sec-title" data-reveal data-split><span class="line" data-i18n="proj.journeyTitle">رحلة المشروع</span></h2>
-        <p class="sec-lede" data-reveal style="--r:1" data-i18n="proj.journeyLede">من الفكرة إلى الواقع. كل مرحلة من التنفيذ بدقة وعناية لضمان أفضل النتائج وأعلى جودة.</p>
+      <div class="fl-rows">
+
+        <!-- 01 · Ceramic -->
+        <article class="fl-row" data-reveal style="--r:0">
+          <div class="fl-gallery">
+            <div class="fl-shot fl-shot--main"><img src="assets/fields/ceramic-1.jpeg" alt="أعمال السيراميك" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/ceramic-2.jpeg" alt="أعمال السيراميك" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/ceramic-3.jpeg" alt="أعمال السيراميك" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/ceramic-4.jpeg" alt="أعمال السيراميك" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/ceramic-5.jpeg" alt="أعمال السيراميك" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="fl-row-copy">
+            <span class="fl-num">01</span>
+            <h2 class="fl-title" data-i18n="fl.f1.title">أعمال السيراميك</h2>
+            <span class="fl-title-en" data-i18n="fl.f1.titleEn">Ceramic Works</span>
+            <p class="fl-desc" data-i18n="fl.f1.desc">توريد وتركيب السيراميك بجودة عالية وتشطيبات احترافية تناسب جميع المساحات.</p>
+            <a class="fl-more" href="#fields">
+              <span data-i18n="fl.more">عرض المزيد</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 02 · Mosaic -->
+        <article class="fl-row" data-reveal style="--r:1">
+          <div class="fl-gallery">
+            <div class="fl-shot fl-shot--main"><img src="assets/fields/mosaic-1.jpeg" alt="أعمال الموزايكو" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/mosaic-2.jpeg" alt="أعمال الموزايكو" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/mosaic-3.jpeg" alt="أعمال الموزايكو" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/mosaic-4.jpeg" alt="أعمال الموزايكو" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/mosaic-5.jpeg" alt="أعمال الموزايكو" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="fl-row-copy">
+            <span class="fl-num">02</span>
+            <h2 class="fl-title" data-i18n="fl.f2.title">أعمال الموزايكو</h2>
+            <span class="fl-title-en" data-i18n="fl.f2.titleEn">Mosaic Works</span>
+            <p class="fl-desc" data-i18n="fl.f2.desc">تنفيذ أعمال الموزايكو بكافة أشكالها وألوانها للمداخل والأرضيات والتفاصيل الجمالية.</p>
+            <a class="fl-more" href="#fields">
+              <span data-i18n="fl.more">عرض المزيد</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 03 · Painting -->
+        <article class="fl-row" data-reveal style="--r:2">
+          <div class="fl-gallery">
+            <div class="fl-shot fl-shot--main"><img src="assets/fields/painting-1.jpeg" alt="أعمال الدهانات" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/painting-2.jpeg" alt="أعمال الدهانات" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/painting-3.jpeg" alt="أعمال الدهانات" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/painting-4.jpeg" alt="أعمال الدهانات" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/painting-5.jpeg" alt="أعمال الدهانات" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="fl-row-copy">
+            <span class="fl-num">03</span>
+            <h2 class="fl-title" data-i18n="fl.f3.title">أعمال الدهانات</h2>
+            <span class="fl-title-en" data-i18n="fl.f3.titleEn">Painting Works</span>
+            <p class="fl-desc" data-i18n="fl.f3.desc">جميع أعمال الدهان الداخلي والخارجي بأفضل الخامات والألوان وبأيدي متخصصة.</p>
+            <a class="fl-more" href="#fields">
+              <span data-i18n="fl.more">عرض المزيد</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 04 · Building -->
+        <article class="fl-row" data-reveal style="--r:3">
+          <div class="fl-gallery">
+            <div class="fl-shot fl-shot--main"><img src="assets/fields/building-1.jpeg" alt="أعمال المباني" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/building-2.jpeg" alt="أعمال المباني" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/building-3.jpeg" alt="أعمال المباني" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/building-4.jpeg" alt="أعمال المباني" loading="lazy" decoding="async"></div>
+            <div class="fl-shot"><img src="assets/fields/building-5.jpeg" alt="أعمال المباني" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="fl-row-copy">
+            <span class="fl-num">04</span>
+            <h2 class="fl-title" data-i18n="fl.f4.title">أعمال المباني</h2>
+            <span class="fl-title-en" data-i18n="fl.f4.titleEn">Building Works</span>
+            <p class="fl-desc" data-i18n="fl.f4.desc">تنفيذ أعمال المباني والحوائط والسور والترميمات بجودة عالية ومتانة تدوم.</p>
+            <a class="fl-more" href="#fields">
+              <span data-i18n="fl.more">عرض المزيد</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
       </div>
 
-      <div class="journey-tabs" role="tablist" aria-label="مراحل المشروع" data-reveal style="--r:2">
-        <button class="jt-tab is-active" type="button" role="tab" aria-selected="true" data-phase="0">
-          <span class="jt-label" data-i18n="proj.tabRestore">مرحلة الترميم</span><span class="jt-num">01</span>
-        </button>
-        <button class="jt-tab" type="button" role="tab" aria-selected="false" data-phase="1">
-          <span class="jt-label" data-i18n="proj.tabBuild">مرحلة البناء</span><span class="jt-num">02</span>
-        </button>
-        <button class="jt-tab" type="button" role="tab" aria-selected="false" data-phase="2">
-          <span class="jt-label" data-i18n="proj.tabResult">النتيجة النهائية</span><span class="jt-num">03</span>
-        </button>
-      </div>
-
-      <div class="journey-phases" id="journeyPhases"><!-- built by JS --></div>
-
-      <div class="sec-cta proj-cta-row" data-reveal style="--r:5">
+      <!-- Bottom CTA -->
+      <div class="sec-cta proj-cta-row" data-reveal style="--r:4">
         <div class="proj-cta-copy">
-          <p data-i18n="proj.similarProject1">لديك مشروع مشابه؟</p>
-          <p class="proj-cta-sub" data-i18n="proj.similarProject2">دعنا نحوله إلى حقيقة.</p>
+          <p data-i18n="proj.similarProject1">لديك مشروع جديد؟</p>
+          <p class="proj-cta-sub" data-i18n="fl.ctaSub">دعنا نساعدك على تنفيذه بأعلى جودة.</p>
         </div>
         <div class="proj-cta-actions">
           <a class="proj-cta proj-cta--solid" href="index.html#contact">
@@ -240,8 +294,7 @@
           <li><a href="about.html" data-i18n="nav.whoweare">من نحن</a></li>
           <li><a href="index.html#services" data-i18n="nav.services">خدماتنا</a></li>
           <li><a href="fields.html" data-i18n="nav.fields">مجالات التنفيذ</a></li>
-          <li><a href="index.html#projects" data-i18n="nav.projects">مشاريعنا</a></li>
-          <li><a href="index.html#partners" data-i18n="nav.clients">عملاؤنا</a></li>
+          <li><a href="projects-all.html" data-i18n="nav.projects">مشاريعنا</a></li>
           <li><a href="index.html#contact" data-i18n="nav.contact">تواصل معنا</a></li>
         </ul>
       </nav>
@@ -308,9 +361,16 @@
   </div>
 </footer>
 
-<script src="projects-data.js"></script>
+<!-- Floating WhatsApp button — company line, bottom-right -->
+<a href="https://wa.me/201066581414" target="_blank" rel="noopener"
+   class="wa-float" aria-label="تواصل معنا على واتساب" data-i18n-attr="aria-label:a11y.whatsapp">
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path fill="#25D366" d="M16.004 3C9.06 3 3.43 8.62 3.43 15.56c0 2.32.62 4.5 1.7 6.38L3 29l7.24-2.1a12.5 12.5 0 005.76 1.42h.01c6.94 0 12.57-5.62 12.57-12.56C28.58 8.62 22.95 3 16.004 3z"/>
+    <path fill="#FFF" d="M22.4 19.02c-.34-.17-2-1-2.3-1.1-.31-.12-.53-.17-.76.17-.22.34-.87 1.1-1.07 1.32-.2.23-.4.25-.73.09-.34-.17-1.43-.53-2.72-1.68-1-.9-1.68-2-1.88-2.34-.2-.34-.02-.52.15-.7.15-.15.34-.4.5-.6.17-.2.22-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.76-1.85-1.05-2.53-.27-.66-.55-.57-.76-.58l-.65-.01c-.22 0-.6.09-.9.43-.31.34-1.18 1.15-1.18 2.82s1.21 3.27 1.38 3.5c.17.22 2.38 3.63 5.76 5.09.8.35 1.44.55 1.93.71.81.26 1.55.22 2.14.13.65-.1 2-.82 2.28-1.6.28-.8.28-1.48.2-1.62-.08-.14-.3-.22-.64-.39z"/>
+  </svg>
+</a>
+
 <script src="i18n.js"></script>
 <script src="script.js" defer></script>
-<script src="project.js" defer></script>
 </body>
 </html>
