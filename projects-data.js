@@ -51,9 +51,9 @@ var PROJECTS = {
     type: "تصنيع وتركيب GRC",
     duration: "8 أشهر",
     location: "الإسكندرية - مصر",
-    hero: "assets/p4/hero.png",
-    photos: ["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"],
-    finalPhoto: "hero.png"
+    hero: "assets/p4/hero.jpg",
+    photos: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"],
+    finalPhoto: "hero.jpg"
   },
 
   5: {
@@ -63,9 +63,9 @@ var PROJECTS = {
     type: "تصنيع وتركيب GRC",
     duration: "9 أشهر",
     location: "الإسكندرية - مصر",
-    hero: "assets/p5/hero.png",
-    photos: ["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png"],
-    finalPhoto: "hero.png"
+    hero: "assets/p5/hero.jpg",
+    photos: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg"],
+    finalPhoto: "hero.jpg"
   },
 
   6: {
@@ -75,9 +75,9 @@ var PROJECTS = {
     type: "تصنيع وتركيب GRC",
     duration: "12 شهر",
     location: "الإسكندرية - مصر",
-    hero: "assets/p6/hero.png",
+    hero: "assets/p6/hero.jpg",
     photos: ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg","8.jpeg","9.jpeg","10.jpeg"],
-    finalPhoto: "hero.png"
+    finalPhoto: "hero.jpg"
   },
 
   7: {
