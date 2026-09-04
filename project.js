@@ -12,6 +12,10 @@
   var id      = parseInt(params.get('id'), 10);
   var dataAr  = (typeof PROJECTS !== 'undefined' && PROJECTS[id]) ? PROJECTS[id] : (PROJECTS && PROJECTS[1]);
 
+  // An unknown/missing id falls back to project 1 — the canonical URL and
+  // structured data must name the project actually being shown.
+  if (!(typeof PROJECTS !== 'undefined' && PROJECTS[id])) { id = 1; }
+
   if (!dataAr) return;   // no data file loaded — leave the shell as-is
 
   var byId = function (id) { return document.getElementById(id); };
@@ -127,6 +131,72 @@
     var heroImg = byId('projHeroImg');
     heroImg.src = dataAr.hero;
     heroImg.alt = data.title;
+
+    renderSeoMeta(data);
+  }
+
+  /* Search engines and link previews read the <head>, not the rendered
+     DOM — so mirror this project's identity into it. */
+  function renderSeoMeta(data) {
+    var origin = location.origin + location.pathname.replace(/[^/]*$/, '');
+    var pageUrl = origin + 'project.html?id=' + id;
+
+    setMeta('name', 'description', data.lede);
+    setMeta('property', 'og:title', data.title + pageTitleSuffix());
+    setMeta('property', 'og:description', data.lede);
+    setMeta('property', 'og:url', pageUrl);
+    setMeta('property', 'og:image', origin + dataAr.hero);
+
+    var canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', pageUrl);
+
+    var ld = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'CreativeWork',
+          name: data.title,
+          description: data.lede,
+          url: pageUrl,
+          image: origin + dataAr.hero,
+          inLanguage: 'ar',
+          locationCreated: { '@type': 'Place', name: data.location },
+          creator: { '@id': 'https://unitedconstructioneg.com/#organization' }
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'الرئيسية', item: 'https://unitedconstructioneg.com/' },
+            { '@type': 'ListItem', position: 2, name: 'مشاريعنا', item: 'https://unitedconstructioneg.com/projects-all.html' },
+            { '@type': 'ListItem', position: 3, name: data.title, item: pageUrl }
+          ]
+        }
+      ]
+    };
+
+    var script = byId('projectLd');
+    if (!script) {
+      script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.id = 'projectLd';
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(ld);
+  }
+
+  function setMeta(attr, key, value) {
+    var el = document.head.querySelector('meta[' + attr + '="' + key + '"]');
+    if (!el) {
+      el = document.createElement('meta');
+      el.setAttribute(attr, key);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('content', value);
   }
 
 
