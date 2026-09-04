@@ -167,6 +167,43 @@
     'partner6.name': { ar: 'ريستور جروب', en: 'Restore Group' },
     'partner6.sub':  { ar: 'للترميم والتطوير', en: 'Restoration & Development' },
 
+    /* ---------- faq section ---------- */
+    'faq.kicker':  { ar: 'الأسئلة الشائعة', en: 'FAQ' },
+    'faq.titlePre': { ar: 'أسئلة ', en: 'Frequently asked ' },
+    'faq.titleEm':  { ar: 'متكررة', en: 'questions' },
+    'faq.lede': { ar: 'جمعنا لكم أكثر الأسئلة التي تصلنا من عملائنا، وإن لم تجدوا إجابتكم هنا فنحن على تواصل دائم معكم.',
+                  en: 'The questions our clients ask most. If your answer is not here, we are always a message away.' },
+
+    'faq.q1': { ar: 'ما هي الخدمات التي تقدمها المتحدة للإنشاءات والمقاولات؟',
+                en: 'What services does United Construction provide?' },
+    'faq.a1': { ar: 'نقدم المقاولات العامة والتصميم المعماري وإدارة المشاريع والتشطيبات الداخلية وأعمال البنية التحتية، إضافة إلى تصنيع وتركيب عناصر GRC وأعمال الترميم وإعادة التأهيل للمباني الأثرية والتاريخية.',
+                en: 'General contracting, architectural design, project management, interior finishing and infrastructure works — alongside GRC fabrication and installation, and the restoration and rehabilitation of heritage and historic buildings.' },
+
+    'faq.q2': { ar: 'أين تقع الشركة وما هي مناطق عملها؟',
+                en: 'Where are you based and where do you work?' },
+    'faq.a2': { ar: 'مقرنا في 21 طريق اسكندرية مطروح، ش مدرسة شيرين، قسم العامرية بالإسكندرية. ننفذ مشاريعنا في الإسكندرية وجميع أنحاء جمهورية مصر العربية.',
+                en: 'Our office is at 21 Alexandria–Matrouh Rd, Shirin School St, Al-Amriya, Alexandria. We deliver projects across Alexandria and throughout Egypt.' },
+
+    'faq.q3': { ar: 'ما هو GRC ولماذا يُستخدم في المشاريع؟',
+                en: 'What is GRC and why is it used?' },
+    'faq.a3': { ar: 'الـ GRC هو الخرسانة المسلحة بالألياف الزجاجية، ويُستخدم في تصنيع الواجهات والعناصر المعمارية والزخرفية. يتميز بخفة الوزن مع متانة عالية ومقاومة لعوامل الطقس، ويسمح بتنفيذ تفاصيل معمارية دقيقة تحاكي الحجر الطبيعي.',
+                en: 'GRC is glass-fibre reinforced concrete, used for façades and architectural or decorative elements. It is light yet highly durable and weather-resistant, and it holds fine architectural detail that reads like natural stone.' },
+
+    'faq.q4': { ar: 'هل تنفذون أعمال ترميم المباني الأثرية والتاريخية؟',
+                en: 'Do you restore heritage and historic buildings?' },
+    'faq.a4': { ar: 'نعم، الترميم وإعادة التأهيل من أهم تخصصاتنا. من أعمالنا ترميم مبنى المتحف اليوناني الروماني، ومبنى محطة مصر، وسور المنتزه الأثري، وقصر السلاملك — بما يحافظ على الطابع المعماري الأصيل مع تلبية متطلبات الاستخدام الحديث.',
+                en: 'Yes — restoration and rehabilitation is one of our core specialities. Our work includes the Greco-Roman Museum, the Misr Station building, the Montazah heritage wall and the Salamlek Palace, preserving the original architectural character while meeting modern requirements.' },
+
+    'faq.q5': { ar: 'كيف أحصل على عرض سعر لمشروعي؟',
+                en: 'How do I get a quote for my project?' },
+    'faq.a5': { ar: 'تواصل معنا عبر نموذج التواصل في الموقع أو على الهاتف أو واتساب، وسنقوم بدراسة متطلبات مشروعك وتحليلها ووضع خطة التنفيذ المناسبة قبل تقديم العرض.',
+                en: 'Reach us through the contact form, by phone or on WhatsApp. We study and analyse your requirements and set out a delivery plan before issuing the quote.' },
+
+    'faq.q6': { ar: 'هل الشركة مسجلة ومرخصة رسميًا؟',
+                en: 'Is the company officially registered and licensed?' },
+    'faq.a6': { ar: 'نعم، المتحدة للإنشاءات والمقاولات شركة مسجلة رسميًا ومرخصة لدى الجهات الحكومية المصرية، ولدينا البطاقة الضريبية وتسجيل ضريبة القيمة المضافة.',
+                en: 'Yes. United Construction is officially registered and licensed with the Egyptian government authorities, and holds a tax card and VAT registration.' },
+
     /* ---------- contact section ---------- */
     'contact.kicker':  { ar: 'CONTACT', en: 'CONTACT' },
     'contact.titlePre':{ ar: 'تواصل ', en: 'Get in ' },
