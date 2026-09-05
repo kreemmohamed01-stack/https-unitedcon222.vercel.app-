@@ -26,7 +26,7 @@ body.page-about{ padding-top:0; }
 }
 .ab-hero-bg{
   position:absolute; inset:0;
-  background:url("assets/about/hero.jpeg") center left/cover no-repeat;
+  background:url("assets/about/hero.webp") center left/cover no-repeat;
   transform:scale(1.06);
   animation:abHeroSettle 2.6s var(--ease-cine) forwards;
 }
@@ -235,7 +235,7 @@ body.page-about{ padding-top:0; }
    3. WHY UNITED — pillar cards
    ============================================================ */
 .sec--ab-why{ padding-block:clamp(3rem,6vw,5.4rem); }
-.sec--ab-why .sec-bg{ background-image:url("assets/sec2-bg.jpg"); opacity:.35; }
+.sec--ab-why .sec-bg{ background-image:url("assets/sec2-bg.webp"); opacity:.35; }
 .sec--ab-why .sec-head{ margin-bottom:clamp(2rem,4vw,3rem); }
 
 .ab-why-grid{
@@ -351,7 +351,7 @@ body.page-about{ padding-top:0; }
    5. METHODOLOGY — step track
    ============================================================ */
 .sec--ab-flow{ padding-block:clamp(3rem,6vw,5.4rem); }
-.sec--ab-flow .sec-bg{ background-image:url("assets/sec5-bg.jpg"); opacity:.3; }
+.sec--ab-flow .sec-bg{ background-image:url("assets/sec5-bg.webp"); opacity:.3; }
 .sec--ab-flow .sec-head{ margin-bottom:clamp(2.2rem,4.4vw,3.4rem); }
 
 .ab-flow-track{

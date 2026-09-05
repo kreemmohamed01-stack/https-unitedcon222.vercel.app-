@@ -22,7 +22,7 @@
   position:absolute;
   inset:0;
   z-index:0;
-  background:url("assets/fields/background.jpeg") center 38% / cover no-repeat;
+  background:url("assets/fields/background.webp") center 38% / cover no-repeat;
 }
 .fl-hero-veil{
   position:absolute;

@@ -1799,7 +1799,7 @@ body:not(.is-preload):not(.is-ready) .corner-lines{ opacity:1; }
              transform 2800ms var(--ease-cine);
 }
 .sec--about .sec-bg,
-.sec--projects .sec-bg{ background-image:url("assets/sec2-bg.jpg"); }
+.sec--projects .sec-bg{ background-image:url("assets/sec2-bg.webp"); }
 
 /* --- Corner logo mark (top-right, as in the reference) --- */
 .sec-mark{
@@ -2063,7 +2063,7 @@ body:not(.is-preload):not(.is-ready) .corner-lines{ opacity:1; }
   position:absolute;
   inset:0;
   z-index:0;
-  background:url("assets/sec3-bg.jpg") center/cover no-repeat;
+  background:url("assets/sec3-bg.webp") center/cover no-repeat;
   opacity:0;
   transform:scale(1.1);
 }
@@ -2628,7 +2628,7 @@ html[dir="ltr"] .pg-more svg{ animation-name:pgMoreNudgeLtr; }
   --lede-w:56ch;
   padding-block:clamp(3.2rem,6.5vw,6rem);
 }
-.sec--partners .sec-bg{ background-image:url("assets/sec5-bg.jpg"); }
+.sec--partners .sec-bg{ background-image:url("assets/sec5-bg.webp"); }
 
 /* kicker → column ornament → lede, per the reference */
 .sec-rule--column i.rule-column{
@@ -2789,7 +2789,7 @@ html[dir="ltr"] .pg-more svg{ animation-name:pgMoreNudgeLtr; }
   background:#0B0A08;
 }
 .sec--contact .sec-bg{
-  background-image:url("assets/sec6-bg.jpg");
+  background-image:url("assets/sec6-bg.webp");
   opacity:0;
 }
 .sec--contact.is-in > .sec-bg{ opacity:1; }
@@ -3136,7 +3136,7 @@ html[dir="ltr"] .pg-more svg{ animation-name:pgMoreNudgeLtr; }
   padding-block:clamp(3rem,6vw,5.4rem) 0;
   background:var(--cream-50);
 }
-.sec--footer .sec-bg{ background-image:url("assets/footer-back.jpeg"); }
+.sec--footer .sec-bg{ background-image:url("assets/footer-back.webp"); }
 
 .footer-grid{
   display:grid;

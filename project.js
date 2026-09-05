@@ -141,11 +141,16 @@
     var origin = location.origin + location.pathname.replace(/[^/]*$/, '');
     var pageUrl = origin + 'project.html?id=' + id;
 
+    // Page images are WebP, but link-preview crawlers (WhatsApp,
+    // Facebook) still handle it unevenly — so og:image points at the
+    // JPEG twin recorded in the project record.
+    var ogImage = origin + (dataAr.heroJpeg || dataAr.hero);
+
     setMeta('name', 'description', data.lede);
     setMeta('property', 'og:title', data.title + pageTitleSuffix());
     setMeta('property', 'og:description', data.lede);
     setMeta('property', 'og:url', pageUrl);
-    setMeta('property', 'og:image', origin + dataAr.hero);
+    setMeta('property', 'og:image', ogImage);
 
     var canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {

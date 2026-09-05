@@ -15,9 +15,10 @@ var PROJECTS = {
     type: "ترميم وإعادة تأهيل",
     duration: "18 شهر",
     location: "الإسكندرية - مصر",
-    hero: "assets/p1/hero.jpg",
-    photos: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg"],
-    finalPhoto: "hero.jpg"
+    hero: "assets/p1/hero.webp",
+    heroJpeg: "assets/p1/hero.jpg",
+    photos: ["1.webp","2.webp","3.webp","4.webp","5.webp","6.webp","7.webp","8.webp","9.webp"],
+    finalPhoto: "hero.webp"
   },
 
   2: {
@@ -27,9 +28,10 @@ var PROJECTS = {
     type: "ترميم وإعادة تأهيل",
     duration: "24 شهر",
     location: "الإسكندرية - مصر",
-    hero: "assets/p2/hero.jpeg",
-    photos: ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg"],
-    finalPhoto: "hero.jpeg"
+    hero: "assets/p2/hero.webp",
+    heroJpeg: "assets/p2/hero.jpeg",
+    photos: ["1.webp","2.webp","3.webp","4.webp","5.webp","6.webp"],
+    finalPhoto: "hero.webp"
   },
 
   3: {
@@ -39,9 +41,10 @@ var PROJECTS = {
     type: "ترميم وتركيب GRC",
     duration: "10 أشهر",
     location: "الإسكندرية - مصر",
-    hero: "assets/p3/hero.jpeg",
-    photos: ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg"],
-    finalPhoto: "hero.jpeg"
+    hero: "assets/p3/hero.webp",
+    heroJpeg: "assets/p3/hero.jpeg",
+    photos: ["1.webp","2.webp","3.webp","4.webp","5.webp","6.webp","7.webp"],
+    finalPhoto: "hero.webp"
   },
 
   4: {
@@ -51,9 +54,10 @@ var PROJECTS = {
     type: "تصنيع وتركيب GRC",
     duration: "8 أشهر",
     location: "الإسكندرية - مصر",
-    hero: "assets/p4/hero.jpg",
-    photos: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"],
-    finalPhoto: "hero.jpg"
+    hero: "assets/p4/hero.webp",
+    heroJpeg: "assets/p4/hero.jpg",
+    photos: ["1.webp","2.webp","3.webp","4.webp","5.webp","6.webp","7.webp","8.webp"],
+    finalPhoto: "hero.webp"
   },
 
   5: {
@@ -63,9 +67,10 @@ var PROJECTS = {
     type: "تصنيع وتركيب GRC",
     duration: "9 أشهر",
     location: "الإسكندرية - مصر",
-    hero: "assets/p5/hero.jpg",
-    photos: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg"],
-    finalPhoto: "hero.jpg"
+    hero: "assets/p5/hero.webp",
+    heroJpeg: "assets/p5/hero.jpg",
+    photos: ["1.webp","2.webp","3.webp","4.webp","5.webp","6.webp","7.webp","8.webp","9.webp"],
+    finalPhoto: "hero.webp"
   },
 
   6: {
@@ -75,9 +80,10 @@ var PROJECTS = {
     type: "تصنيع وتركيب GRC",
     duration: "12 شهر",
     location: "الإسكندرية - مصر",
-    hero: "assets/p6/hero.jpg",
-    photos: ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg","8.jpeg","9.jpeg","10.jpeg"],
-    finalPhoto: "hero.jpg"
+    hero: "assets/p6/hero.webp",
+    heroJpeg: "assets/p6/hero.jpg",
+    photos: ["1.webp","2.webp","3.webp","4.webp","5.webp","6.webp","7.webp","8.webp","9.webp","10.webp"],
+    finalPhoto: "hero.webp"
   },
 
   7: {
@@ -87,9 +93,10 @@ var PROJECTS = {
     type: "تنفيذ متكامل",
     duration: "20 شهر",
     location: "الإسكندرية - مصر",
-    hero: "assets/p7/hero.jpeg",
-    photos: ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg","7.jpeg","8.jpeg","9.jpeg"],
-    finalPhoto: "hero.jpeg"
+    hero: "assets/p7/hero.webp",
+    heroJpeg: "assets/p7/hero.jpeg",
+    photos: ["1.webp","2.webp","3.webp","4.webp","5.webp","6.webp","7.webp","8.webp","9.webp"],
+    finalPhoto: "hero.webp"
   }
 
 };

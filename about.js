@@ -26,7 +26,9 @@
 
   function close() {
     lightbox.hidden = true;
-    img.src = '';
+    // src="" resolves against the page URL, so the browser re-requests
+    // about.html as an image. Removing the attribute costs nothing.
+    img.removeAttribute('src');
     document.body.style.overflow = '';
     if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
   }
