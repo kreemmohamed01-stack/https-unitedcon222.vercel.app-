@@ -1066,6 +1066,13 @@ body.nav-open .site-header .header-actions{
   .hero-video{ display:none; }
 }
 
+/* Phones and small tablets keep the poster only. script.js checks the
+   same width before it ever attaches a src, so the file is not merely
+   hidden here — it is never requested. */
+@media (max-width:900px){
+  .hero-video{ display:none; }
+}
+
 /* Readability scrim — gentle, image stays the hero.
    `to left` runs right→left, backing the RTL copy column. */
 .hero-scrim{

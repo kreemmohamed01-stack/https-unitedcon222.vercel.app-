@@ -64,25 +64,42 @@
   /* ==========================================================
      1b. HERO VIDEO
      ----------------------------------------------------------
-     The poster paints first; the clip only fades in once it can
-     actually play. Autoplay can still be refused (iOS low-power,
-     data saver) — in that case we simply leave the still up.
+     The clip is decoration over a poster that already carries the
+     hero, so it is worth ~0.9 MB only for visitors who can spend
+     it. The <video> ships with no src; we attach one here after
+     checking the screen and the connection, which keeps phones,
+     data-saver users and slow links on the still image alone.
      ========================================================== */
   var heroVideo = document.getElementById('heroVideo');
 
-  if (heroVideo && !reduced) {
+  var wantsHeroVideo = function () {
+    if (reduced) return false;
+
+    // Phones and small tablets: the poster is the hero, matching the
+    // `.hero-video{display:none}` rule at this same breakpoint.
+    if (window.matchMedia('(max-width:900px)').matches) return false;
+
+    var c = navigator.connection ||
+            navigator.mozConnection ||
+            navigator.webkitConnection;
+    if (c) {
+      if (c.saveData) return false;
+      if (/(^|-)2g$/.test(c.effectiveType || '')) return false;
+      if (c.effectiveType === '3g') return false;
+    }
+    return true;
+  };
+
+  if (heroVideo && wantsHeroVideo()) {
     var showVideo = function () {
       heroVideo.classList.add('is-playing');
     };
 
-    // readyState 3 = HAVE_FUTURE_DATA: enough buffered to start.
-    if (heroVideo.readyState >= 3) {
-      showVideo();
-    } else {
-      heroVideo.addEventListener('canplay', showVideo, { once: true });
-    }
+    heroVideo.addEventListener('canplay', showVideo, { once: true });
 
-    // Some engines need play() called explicitly even with `autoplay`.
+    heroVideo.src = heroVideo.dataset.src;
+    heroVideo.load();
+
     var attempt = heroVideo.play();
     if (attempt && typeof attempt.catch === 'function') {
       attempt.catch(function () {
