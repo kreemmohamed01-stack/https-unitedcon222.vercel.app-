@@ -46,7 +46,7 @@
     'a11y.mainNav':     { ar: 'التنقل الرئيسي',  en: 'Main navigation' },
     'a11y.mobileNav':   { ar: 'قائمة الجوال',    en: 'Mobile menu' },
     'a11y.whatsapp':    { ar: 'تواصل معنا على واتساب', en: 'Contact us on WhatsApp' },
-    'a11y.whatsappKareem': { ar: 'تواصل مع كريم علي على واتساب', en: 'Contact Kareem Aly on WhatsApp' },
+    'a11y.whatsappKareem': { ar: 'زيارة موقع kreemaly', en: 'Visit kreemaly.com' },
 
     'home.pageTitle': { ar: 'المتحدة للإنشاءات والمقاولات | United Construction', en: 'United Construction | المتحدة للإنشاءات والمقاولات' },
 

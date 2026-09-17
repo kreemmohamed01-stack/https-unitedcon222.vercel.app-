@@ -3379,6 +3379,18 @@ html[dir="ltr"] .pg-more svg{ animation-name:pgMoreNudgeLtr; }
   .fb-credit::before{ animation:none; display:none; }
 }
 
+/* Drawer variant of the powered-by plate — same glass/glow treatment,
+   scaled down to sit at the foot of the mobile menu. */
+.drawer-credit-wrap{
+  display:flex;
+  justify-content:center;
+  margin-top:1.4rem;
+}
+.drawer-credit-wrap .fb-credit{
+  font-size:.82rem;
+  padding:.6rem 1.3rem;
+}
+
 /* screen-reader-only label for the placeholder-driven fields */
 .sr-only{
   position:absolute;
