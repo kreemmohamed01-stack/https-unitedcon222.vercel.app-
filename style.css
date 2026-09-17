@@ -3390,6 +3390,7 @@ html[dir="ltr"] .pg-more svg{ animation-name:pgMoreNudgeLtr; }
   font-size:.82rem;
   padding:.6rem 1.3rem;
 }
+.drawer-credit-wrap .fb-en{ color:#fff; }
 
 /* screen-reader-only label for the placeholder-driven fields */
 .sr-only{
